@@ -13,9 +13,12 @@
 		906F073925C855C200A4FEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906F073725C855C200A4FEBB /* Main.storyboard */; };
 		906F073B25C855C300A4FEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906F073A25C855C300A4FEBB /* Assets.xcassets */; };
 		906F073E25C855C300A4FEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906F073C25C855C300A4FEBB /* LaunchScreen.storyboard */; };
+		EE440237EBE492C6D1D0FBF6 /* Pods_Grotto_Center.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBAB1F3C8091BC853A665AA /* Pods_Grotto_Center.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DE93731B0521C833F7E2AED /* Pods-Grotto Center.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grotto Center.release.xcconfig"; path = "Target Support Files/Pods-Grotto Center/Pods-Grotto Center.release.xcconfig"; sourceTree = "<group>"; };
+		75D981AA48603A12B2467184 /* Pods-Grotto Center.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grotto Center.debug.xcconfig"; path = "Target Support Files/Pods-Grotto Center/Pods-Grotto Center.debug.xcconfig"; sourceTree = "<group>"; };
 		906F072E25C855C200A4FEBB /* Grotto Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grotto Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		906F073125C855C200A4FEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		906F073325C855C200A4FEBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		906F073A25C855C300A4FEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		906F073D25C855C300A4FEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		906F073F25C855C300A4FEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDBAB1F3C8091BC853A665AA /* Pods_Grotto_Center.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grotto_Center.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE440237EBE492C6D1D0FBF6 /* Pods_Grotto_Center.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74C4AC930E142478BFAF9F25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDBAB1F3C8091BC853A665AA /* Pods_Grotto_Center.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		906F072525C855C200A4FEBB = {
 			isa = PBXGroup;
 			children = (
 				906F073025C855C200A4FEBB /* Grotto Center */,
 				906F072F25C855C200A4FEBB /* Products */,
+				9B2044EF567CDF4FF775884E /* Pods */,
+				74C4AC930E142478BFAF9F25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "Grotto Center";
 			sourceTree = "<group>";
 		};
+		9B2044EF567CDF4FF775884E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75D981AA48603A12B2467184 /* Pods-Grotto Center.debug.xcconfig */,
+				3DE93731B0521C833F7E2AED /* Pods-Grotto Center.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 906F074225C855C300A4FEBB /* Build configuration list for PBXNativeTarget "Grotto Center" */;
 			buildPhases = (
+				A1484686C87CF2CDF55F63F7 /* [CP] Check Pods Manifest.lock */,
 				906F072A25C855C200A4FEBB /* Sources */,
 				906F072B25C855C200A4FEBB /* Frameworks */,
 				906F072C25C855C200A4FEBB /* Resources */,
+				6674B70DD2D552B985C65D67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6674B70DD2D552B985C65D67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grotto Center/Pods-Grotto Center-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Grotto Center/Pods-Grotto Center-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Grotto Center/Pods-Grotto Center-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1484686C87CF2CDF55F63F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grotto Center-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		906F072A25C855C200A4FEBB /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		906F074325C855C300A4FEBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D981AA48603A12B2467184 /* Pods-Grotto Center.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		906F074425C855C300A4FEBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE93731B0521C833F7E2AED /* Pods-Grotto Center.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
