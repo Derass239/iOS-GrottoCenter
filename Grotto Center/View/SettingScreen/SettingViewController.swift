@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingViewController: ViewController {
+class SettingViewController: UIViewController {
   
   var viewModel: SettingViewModel!
   

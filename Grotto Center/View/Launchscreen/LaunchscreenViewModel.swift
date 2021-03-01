@@ -17,4 +17,8 @@ class LaunchscreenViewModel {
     self.coordinator = coordinator
     
   }
+  
+  func showMainView() {
+    coordinator.coordinateToTabBar()
+  }
 }

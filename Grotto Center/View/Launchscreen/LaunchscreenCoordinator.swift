@@ -22,4 +22,9 @@ class LaunchscreenCoordinator: Coordinator {
     
     navigationController.pushViewController(viewController, animated: true)
   }
+  
+  func coordinateToTabBar() {
+    let tabBarCoordinator = TabBarCoordinator(navigationController: navigationController)
+    coordinate(to: tabBarCoordinator)
+  }
 }

@@ -14,5 +14,8 @@ class LaunchscreenViewController: ViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+      self.viewModel.showMainView()
+    })
   }
 }

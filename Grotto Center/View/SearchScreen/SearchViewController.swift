@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchViewController: ViewController {
+class SearchViewController: UIViewController {
   
   var viewModel: SearchViewModel!
   

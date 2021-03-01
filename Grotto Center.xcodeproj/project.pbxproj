@@ -26,6 +26,12 @@
 		9090157425E8FEDC00BB59F7 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090157125E8FEDC00BB59F7 /* SearchCoordinator.swift */; };
 		9090157525E8FEDC00BB59F7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090157225E8FEDC00BB59F7 /* SearchViewController.swift */; };
 		9090157625E8FEDC00BB59F7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090157325E8FEDC00BB59F7 /* SearchViewModel.swift */; };
+		909F81E025ED4BF900574F63 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F81DD25ED4BF900574F63 /* TabBarCoordinator.swift */; };
+		909F81E125ED4BF900574F63 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F81DE25ED4BF900574F63 /* TabBarViewController.swift */; };
+		909F81E225ED4BF900574F63 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F81DF25ED4BF900574F63 /* TabBarViewModel.swift */; };
+		909F81E525ED4E9300574F63 /* HomeMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F81E425ED4E9300574F63 /* HomeMapViewController.xib */; };
+		909F81E825ED4ECB00574F63 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F81E725ED4ECB00574F63 /* SettingViewController.xib */; };
+		909F81EB25ED4EE800574F63 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F81EA25ED4EE800574F63 /* SearchViewController.xib */; };
 		90C14A2125D588F0003DACBD /* GrottoCenterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C14A2025D588F0003DACBD /* GrottoCenterConstants.swift */; };
 		90CD4F3825DACC2A00456C4C /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD4F3725DACC2A00456C4C /* Cave.swift */; };
 		90CD4F3B25DACDFD00456C4C /* Caver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD4F3A25DACDFD00456C4C /* Caver.swift */; };
@@ -57,6 +63,12 @@
 		9090157125E8FEDC00BB59F7 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		9090157225E8FEDC00BB59F7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9090157325E8FEDC00BB59F7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		909F81DD25ED4BF900574F63 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		909F81DE25ED4BF900574F63 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		909F81DF25ED4BF900574F63 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		909F81E425ED4E9300574F63 /* HomeMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMapViewController.xib; sourceTree = "<group>"; };
+		909F81E725ED4ECB00574F63 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		909F81EA25ED4EE800574F63 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		90C14A2025D588F0003DACBD /* GrottoCenterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrottoCenterConstants.swift; sourceTree = "<group>"; };
 		90CD4F3725DACC2A00456C4C /* Cave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cave.swift; sourceTree = "<group>"; };
 		90CD4F3A25DACDFD00456C4C /* Caver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caver.swift; sourceTree = "<group>"; };
@@ -120,6 +132,7 @@
 		909014E025E7B72600BB59F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				909F81D725ED4B7500574F63 /* TabBar */,
 				9090157025E8FECA00BB59F7 /* SearchScreen */,
 				9090156725E8FE6D00BB59F7 /* SettingScreen */,
 				9090155F25E8F4F400BB59F7 /* HomeMap */,
@@ -145,6 +158,7 @@
 				9090156025E8FDC000BB59F7 /* HomeMapCoordinator.swift */,
 				9090156125E8FDC000BB59F7 /* HomeMapViewController.swift */,
 				9090156225E8FDC000BB59F7 /* HomeMapViewModel.swift */,
+				909F81E425ED4E9300574F63 /* HomeMapViewController.xib */,
 			);
 			path = HomeMap;
 			sourceTree = "<group>";
@@ -155,6 +169,7 @@
 				9090156825E8FEC300BB59F7 /* SettingCoordinator.swift */,
 				9090156925E8FEC300BB59F7 /* SettingViewController.swift */,
 				9090156A25E8FEC300BB59F7 /* SettingViewModel.swift */,
+				909F81E725ED4ECB00574F63 /* SettingViewController.xib */,
 			);
 			path = SettingScreen;
 			sourceTree = "<group>";
@@ -165,8 +180,19 @@
 				9090157125E8FEDC00BB59F7 /* SearchCoordinator.swift */,
 				9090157225E8FEDC00BB59F7 /* SearchViewController.swift */,
 				9090157325E8FEDC00BB59F7 /* SearchViewModel.swift */,
+				909F81EA25ED4EE800574F63 /* SearchViewController.xib */,
 			);
 			path = SearchScreen;
+			sourceTree = "<group>";
+		};
+		909F81D725ED4B7500574F63 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				909F81DD25ED4BF900574F63 /* TabBarCoordinator.swift */,
+				909F81DE25ED4BF900574F63 /* TabBarViewController.swift */,
+				909F81DF25ED4BF900574F63 /* TabBarViewModel.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		90E2FF1025D2EEF800E71AD0 /* Models */ = {
@@ -266,8 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9090155B25E8335C00BB59F7 /* Launch Screen.storyboard in Resources */,
+				909F81E825ED4ECB00574F63 /* SettingViewController.xib in Resources */,
+				909F81EB25ED4EE800574F63 /* SearchViewController.xib in Resources */,
 				906F073B25C855C300A4FEBB /* Assets.xcassets in Resources */,
 				909014ED25E7B79300BB59F7 /* Launchscreen.xib in Resources */,
+				909F81E525ED4E9300574F63 /* HomeMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +351,8 @@
 			files = (
 				9090156325E8FDC000BB59F7 /* HomeMapCoordinator.swift in Sources */,
 				909014F325E7BAA300BB59F7 /* AppCoordinator.swift in Sources */,
+				909F81E225ED4BF900574F63 /* TabBarViewModel.swift in Sources */,
+				909F81E125ED4BF900574F63 /* TabBarViewController.swift in Sources */,
 				9090156B25E8FEC300BB59F7 /* SettingCoordinator.swift in Sources */,
 				9090156D25E8FEC300BB59F7 /* SettingViewModel.swift in Sources */,
 				909014EA25E7B78000BB59F7 /* LaunchscreenCoordinator.swift in Sources */,
@@ -337,6 +368,7 @@
 				909014E725E7B76200BB59F7 /* LaunchscreenViewModel.swift in Sources */,
 				9090156C25E8FEC300BB59F7 /* SettingViewController.swift in Sources */,
 				909014F025E7B86500BB59F7 /* Coordinator.swift in Sources */,
+				909F81E025ED4BF900574F63 /* TabBarCoordinator.swift in Sources */,
 				90CD4F3E25DACED000456C4C /* Entrance.swift in Sources */,
 				906F073225C855C200A4FEBB /* AppDelegate.swift in Sources */,
 				90C14A2125D588F0003DACBD /* GrottoCenterConstants.swift in Sources */,
