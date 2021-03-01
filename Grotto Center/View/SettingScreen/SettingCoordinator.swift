@@ -1,5 +1,5 @@
 //
-//  HomeMapScreenCoordinator.swift
+//  SettingScreenCoordinator.swift
 //  Grotto Center
 //
 //  Created by Valentin Limagne on 26/02/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeMapScreenCoordinator: Coordinator {
+class SettingCoordinator: Coordinator {
   
   unowned var navigationController: UINavigationController
   
@@ -16,8 +16,8 @@ class HomeMapScreenCoordinator: Coordinator {
   }
   
   func start() {
-    let viewController = HomeMapScreenViewController(nibName: nil, bundle: nil)
-    viewController.viewModel = HomeMapScreenViewModel(coordinator: self)
+    let viewController = SettingViewController(nibName: nil, bundle: nil)
+    viewController.viewModel = SettingViewModel(coordinator: self)
     
     navigationController.pushViewController(viewController, animated: true)
   }

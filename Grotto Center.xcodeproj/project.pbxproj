@@ -17,15 +17,15 @@
 		909014F325E7BAA300BB59F7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909014F225E7BAA300BB59F7 /* AppCoordinator.swift */; };
 		9090155825E82D5800BB59F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090155725E82D5800BB59F7 /* ViewController.swift */; };
 		9090155B25E8335C00BB59F7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9090155A25E8335C00BB59F7 /* Launch Screen.storyboard */; };
-		9090156325E8FDC000BB59F7 /* HomeMapScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156025E8FDC000BB59F7 /* HomeMapScreenCoordinator.swift */; };
-		9090156425E8FDC000BB59F7 /* HomeMapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156125E8FDC000BB59F7 /* HomeMapScreenViewController.swift */; };
-		9090156525E8FDC000BB59F7 /* HomeMapScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156225E8FDC000BB59F7 /* HomeMapScreenViewModel.swift */; };
-		9090156B25E8FEC300BB59F7 /* SettingScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156825E8FEC300BB59F7 /* SettingScreenCoordinator.swift */; };
-		9090156C25E8FEC300BB59F7 /* SettingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156925E8FEC300BB59F7 /* SettingScreenViewController.swift */; };
-		9090156D25E8FEC300BB59F7 /* SettingScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156A25E8FEC300BB59F7 /* SettingScreenViewModel.swift */; };
-		9090157425E8FEDC00BB59F7 /* SearchScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090157125E8FEDC00BB59F7 /* SearchScreenCoordinator.swift */; };
-		9090157525E8FEDC00BB59F7 /* SearchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090157225E8FEDC00BB59F7 /* SearchScreenViewController.swift */; };
-		9090157625E8FEDC00BB59F7 /* SearchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090157325E8FEDC00BB59F7 /* SearchScreenViewModel.swift */; };
+		9090156325E8FDC000BB59F7 /* HomeMapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156025E8FDC000BB59F7 /* HomeMapCoordinator.swift */; };
+		9090156425E8FDC000BB59F7 /* HomeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156125E8FDC000BB59F7 /* HomeMapViewController.swift */; };
+		9090156525E8FDC000BB59F7 /* HomeMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156225E8FDC000BB59F7 /* HomeMapViewModel.swift */; };
+		9090156B25E8FEC300BB59F7 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156825E8FEC300BB59F7 /* SettingCoordinator.swift */; };
+		9090156C25E8FEC300BB59F7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156925E8FEC300BB59F7 /* SettingViewController.swift */; };
+		9090156D25E8FEC300BB59F7 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090156A25E8FEC300BB59F7 /* SettingViewModel.swift */; };
+		9090157425E8FEDC00BB59F7 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090157125E8FEDC00BB59F7 /* SearchCoordinator.swift */; };
+		9090157525E8FEDC00BB59F7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090157225E8FEDC00BB59F7 /* SearchViewController.swift */; };
+		9090157625E8FEDC00BB59F7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090157325E8FEDC00BB59F7 /* SearchViewModel.swift */; };
 		90C14A2125D588F0003DACBD /* GrottoCenterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C14A2025D588F0003DACBD /* GrottoCenterConstants.swift */; };
 		90CD4F3825DACC2A00456C4C /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD4F3725DACC2A00456C4C /* Cave.swift */; };
 		90CD4F3B25DACDFD00456C4C /* Caver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD4F3A25DACDFD00456C4C /* Caver.swift */; };
@@ -48,15 +48,15 @@
 		909014F225E7BAA300BB59F7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		9090155725E82D5800BB59F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9090155A25E8335C00BB59F7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		9090156025E8FDC000BB59F7 /* HomeMapScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapScreenCoordinator.swift; sourceTree = "<group>"; };
-		9090156125E8FDC000BB59F7 /* HomeMapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapScreenViewController.swift; sourceTree = "<group>"; };
-		9090156225E8FDC000BB59F7 /* HomeMapScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapScreenViewModel.swift; sourceTree = "<group>"; };
-		9090156825E8FEC300BB59F7 /* SettingScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreenCoordinator.swift; sourceTree = "<group>"; };
-		9090156925E8FEC300BB59F7 /* SettingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreenViewController.swift; sourceTree = "<group>"; };
-		9090156A25E8FEC300BB59F7 /* SettingScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreenViewModel.swift; sourceTree = "<group>"; };
-		9090157125E8FEDC00BB59F7 /* SearchScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenCoordinator.swift; sourceTree = "<group>"; };
-		9090157225E8FEDC00BB59F7 /* SearchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenViewController.swift; sourceTree = "<group>"; };
-		9090157325E8FEDC00BB59F7 /* SearchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenViewModel.swift; sourceTree = "<group>"; };
+		9090156025E8FDC000BB59F7 /* HomeMapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapCoordinator.swift; sourceTree = "<group>"; };
+		9090156125E8FDC000BB59F7 /* HomeMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewController.swift; sourceTree = "<group>"; };
+		9090156225E8FDC000BB59F7 /* HomeMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewModel.swift; sourceTree = "<group>"; };
+		9090156825E8FEC300BB59F7 /* SettingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCoordinator.swift; sourceTree = "<group>"; };
+		9090156925E8FEC300BB59F7 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9090156A25E8FEC300BB59F7 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		9090157125E8FEDC00BB59F7 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		9090157225E8FEDC00BB59F7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9090157325E8FEDC00BB59F7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		90C14A2025D588F0003DACBD /* GrottoCenterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrottoCenterConstants.swift; sourceTree = "<group>"; };
 		90CD4F3725DACC2A00456C4C /* Cave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cave.swift; sourceTree = "<group>"; };
 		90CD4F3A25DACDFD00456C4C /* Caver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caver.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			children = (
 				9090157025E8FECA00BB59F7 /* SearchScreen */,
 				9090156725E8FE6D00BB59F7 /* SettingScreen */,
-				9090155F25E8F4F400BB59F7 /* HomeMapScreen */,
+				9090155F25E8F4F400BB59F7 /* HomeMap */,
 				909014E125E7B73400BB59F7 /* Launchscreen */,
 			);
 			path = View;
@@ -139,22 +139,22 @@
 			path = Launchscreen;
 			sourceTree = "<group>";
 		};
-		9090155F25E8F4F400BB59F7 /* HomeMapScreen */ = {
+		9090155F25E8F4F400BB59F7 /* HomeMap */ = {
 			isa = PBXGroup;
 			children = (
-				9090156025E8FDC000BB59F7 /* HomeMapScreenCoordinator.swift */,
-				9090156125E8FDC000BB59F7 /* HomeMapScreenViewController.swift */,
-				9090156225E8FDC000BB59F7 /* HomeMapScreenViewModel.swift */,
+				9090156025E8FDC000BB59F7 /* HomeMapCoordinator.swift */,
+				9090156125E8FDC000BB59F7 /* HomeMapViewController.swift */,
+				9090156225E8FDC000BB59F7 /* HomeMapViewModel.swift */,
 			);
-			path = HomeMapScreen;
+			path = HomeMap;
 			sourceTree = "<group>";
 		};
 		9090156725E8FE6D00BB59F7 /* SettingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				9090156825E8FEC300BB59F7 /* SettingScreenCoordinator.swift */,
-				9090156925E8FEC300BB59F7 /* SettingScreenViewController.swift */,
-				9090156A25E8FEC300BB59F7 /* SettingScreenViewModel.swift */,
+				9090156825E8FEC300BB59F7 /* SettingCoordinator.swift */,
+				9090156925E8FEC300BB59F7 /* SettingViewController.swift */,
+				9090156A25E8FEC300BB59F7 /* SettingViewModel.swift */,
 			);
 			path = SettingScreen;
 			sourceTree = "<group>";
@@ -162,9 +162,9 @@
 		9090157025E8FECA00BB59F7 /* SearchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				9090157125E8FEDC00BB59F7 /* SearchScreenCoordinator.swift */,
-				9090157225E8FEDC00BB59F7 /* SearchScreenViewController.swift */,
-				9090157325E8FEDC00BB59F7 /* SearchScreenViewModel.swift */,
+				9090157125E8FEDC00BB59F7 /* SearchCoordinator.swift */,
+				9090157225E8FEDC00BB59F7 /* SearchViewController.swift */,
+				9090157325E8FEDC00BB59F7 /* SearchViewModel.swift */,
 			);
 			path = SearchScreen;
 			sourceTree = "<group>";
@@ -320,22 +320,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9090156325E8FDC000BB59F7 /* HomeMapScreenCoordinator.swift in Sources */,
+				9090156325E8FDC000BB59F7 /* HomeMapCoordinator.swift in Sources */,
 				909014F325E7BAA300BB59F7 /* AppCoordinator.swift in Sources */,
-				9090156B25E8FEC300BB59F7 /* SettingScreenCoordinator.swift in Sources */,
-				9090156D25E8FEC300BB59F7 /* SettingScreenViewModel.swift in Sources */,
+				9090156B25E8FEC300BB59F7 /* SettingCoordinator.swift in Sources */,
+				9090156D25E8FEC300BB59F7 /* SettingViewModel.swift in Sources */,
 				909014EA25E7B78000BB59F7 /* LaunchscreenCoordinator.swift in Sources */,
-				9090156425E8FDC000BB59F7 /* HomeMapScreenViewController.swift in Sources */,
+				9090156425E8FDC000BB59F7 /* HomeMapViewController.swift in Sources */,
 				90CD4F3B25DACDFD00456C4C /* Caver.swift in Sources */,
 				909014E325E7B75300BB59F7 /* LaunchscreenViewController.swift in Sources */,
-				9090157625E8FEDC00BB59F7 /* SearchScreenViewModel.swift in Sources */,
+				9090157625E8FEDC00BB59F7 /* SearchViewModel.swift in Sources */,
 				9090155825E82D5800BB59F7 /* ViewController.swift in Sources */,
 				90CD4F3825DACC2A00456C4C /* Cave.swift in Sources */,
-				9090157525E8FEDC00BB59F7 /* SearchScreenViewController.swift in Sources */,
-				9090157425E8FEDC00BB59F7 /* SearchScreenCoordinator.swift in Sources */,
-				9090156525E8FDC000BB59F7 /* HomeMapScreenViewModel.swift in Sources */,
+				9090157525E8FEDC00BB59F7 /* SearchViewController.swift in Sources */,
+				9090157425E8FEDC00BB59F7 /* SearchCoordinator.swift in Sources */,
+				9090156525E8FDC000BB59F7 /* HomeMapViewModel.swift in Sources */,
 				909014E725E7B76200BB59F7 /* LaunchscreenViewModel.swift in Sources */,
-				9090156C25E8FEC300BB59F7 /* SettingScreenViewController.swift in Sources */,
+				9090156C25E8FEC300BB59F7 /* SettingViewController.swift in Sources */,
 				909014F025E7B86500BB59F7 /* Coordinator.swift in Sources */,
 				90CD4F3E25DACED000456C4C /* Entrance.swift in Sources */,
 				906F073225C855C200A4FEBB /* AppDelegate.swift in Sources */,

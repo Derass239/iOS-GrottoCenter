@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LaunchscreenViewController: UIViewController {
+class LaunchscreenViewController: ViewController {
   
   var viewModel: LaunchscreenViewModel!
   

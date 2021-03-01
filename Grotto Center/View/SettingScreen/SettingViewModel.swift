@@ -9,11 +9,11 @@ import UIKit
 import RxSwift
 import RxRelay
 
-class SettingScreenViewModel {
+class SettingViewModel {
   
-  let coordinator: SettingScreenCoordinator
+  let coordinator: SettingCoordinator
   
-  init(coordinator: SettingScreenCoordinator) {
+  init(coordinator: SettingCoordinator) {
     self.coordinator = coordinator
     
   }

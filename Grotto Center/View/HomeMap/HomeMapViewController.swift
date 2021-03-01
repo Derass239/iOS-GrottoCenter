@@ -1,5 +1,5 @@
 //
-//  SearchScreenViewController.swift
+//  HomeMapScreenViewController.swift
 //  Grotto Center
 //
 //  Created by Valentin Limagne on 26/02/2021.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class SearchScreenViewController: ViewController {
+class HomeMapViewController: ViewController {
   
-  var viewModel: SearchScreenViewModel!
+  var viewModel: HomeMapViewModel!
   
   override func viewDidLoad() {
     super.viewDidLoad()

@@ -13,9 +13,6 @@ class ViewController: UIViewController {
   @IBOutlet weak var safeAreaCompatibilityContainerView: UIView!
   
   override func viewDidLoad() {
-
-    //safeAreaCompatibilityContainerView.backgroundColor = UIColor(white: 250.0 / 255.0, alpha: 1.0)
-    
     navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
   }
   
@@ -28,11 +25,6 @@ class ViewController: UIViewController {
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     
-    if #available(iOS 11, *) {
-      
-    } else {
-      safeAreaCompatibilityContainerView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
-    }
   }
   
   override func viewDidAppear(_ animated: Bool) {

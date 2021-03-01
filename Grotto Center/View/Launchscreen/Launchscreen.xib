@@ -9,7 +9,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchscreenViewController" customModule="Grotto_Center" customModuleProvider="target">
             <connections>
-                <outlet property="safeAreaCompatibilityContainerView" destination="OI2-Y5-uKw" id="gvf-Y9-Mtc"/>
                 <outlet property="view" destination="S6z-o7-CKP" id="DpP-An-PAe"/>
             </connections>
         </placeholder>

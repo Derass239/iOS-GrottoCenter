@@ -1,5 +1,5 @@
 //
-//  HomeMapScreenViewController.swift
+//  SettingScreenViewController.swift
 //  Grotto Center
 //
 //  Created by Valentin Limagne on 26/02/2021.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class HomeMapScreenViewController: ViewController {
+class SettingViewController: ViewController {
   
-  var viewModel: HomeMapScreenViewModel!
+  var viewModel: SettingViewModel!
   
   override func viewDidLoad() {
     super.viewDidLoad()

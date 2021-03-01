@@ -1,5 +1,5 @@
 //
-//  SettingScreenCoordinator.swift
+//  SearchScreenCoordinator.swift
 //  Grotto Center
 //
 //  Created by Valentin Limagne on 26/02/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingScreenCoordinator: Coordinator {
+class SearchCoordinator: Coordinator {
   
   unowned var navigationController: UINavigationController
   
@@ -16,8 +16,8 @@ class SettingScreenCoordinator: Coordinator {
   }
   
   func start() {
-    let viewController = SettingScreenViewController(nibName: nil, bundle: nil)
-    viewController.viewModel = SettingScreenViewModel(coordinator: self)
+    let viewController = SearchViewController(nibName: nil, bundle: nil)
+    viewController.viewModel = SearchViewModel(coordinator: self)
     
     navigationController.pushViewController(viewController, animated: true)
   }
