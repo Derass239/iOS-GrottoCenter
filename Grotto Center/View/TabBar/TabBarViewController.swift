@@ -26,6 +26,15 @@ class TabBarViewController: UITabBarController {
     self.tabBar.layer.shadowRadius = 10
     self.tabBar.layer.shadowOpacity = 1
     self.tabBar.layer.masksToBounds = false
+
+  }
+
+  var freshLaunch = true
+  override func viewWillAppear(_ animated: Bool) {
+    if freshLaunch == true {
+      freshLaunch = false
+      self.selectedIndex = 2 // 5th tab
+    }
   }
 
 }
