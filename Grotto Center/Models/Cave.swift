@@ -9,9 +9,7 @@ import Foundation
 
 class Cave {
   var id: Int = 0
-  var locked: Bool = false
   var idReviewer: Int = 0
-  var idLocker: Int = 0
   var name: String = "-"
   var minDepth: Int = 0
   var maxDepth: Int = 0
