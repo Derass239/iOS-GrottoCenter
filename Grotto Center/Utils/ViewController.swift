@@ -8,32 +8,36 @@
 import Foundation
 import RxSwift
 
-class ViewController: UIViewController {
+open class ViewController: UIViewController {
   
   @IBOutlet weak var safeAreaCompatibilityContainerView: UIView!
   
-  override func viewDidLoad() {
+  open override func viewDidLoad() {
     navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
+    addSubviews()
+    configure()
+    setupLayout()
   }
   
-  override func viewWillDisappear(_ animated: Bool) {
+  open override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
     
     navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
   }
   
-  override func viewDidLayoutSubviews() {
+  open override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     
   }
   
-  override func viewDidAppear(_ animated: Bool) {
+  open override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     
     updateViewHeightIfNeeded()
   }
   
-  override func viewWillAppear(_ animated: Bool) {
+  open override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.view.frame = UIScreen.main.bounds
   }
@@ -54,4 +58,8 @@ class ViewController: UIViewController {
     view.frame.size.height = newHeight
     view.layoutIfNeeded()
   }
+
+  open func addSubviews() {}
+  open func configure() {}
+  open func setupLayout() {}
 }

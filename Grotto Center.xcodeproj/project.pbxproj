@@ -11,6 +11,9 @@
 		903A958525F77BA7000B4551 /* FavorisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A958225F77BA7000B4551 /* FavorisViewController.swift */; };
 		903A958625F77BA7000B4551 /* FavorisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A958325F77BA7000B4551 /* FavorisViewModel.swift */; };
 		903A958A25F77BB3000B4551 /* Favoris.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903A958925F77BB2000B4551 /* Favoris.xib */; };
+		904D80E12625C79E005ADD2A /* Communicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D80E02625C79E005ADD2A /* Communicator.swift */; };
+		904D80E42625CB8C005ADD2A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D80E32625CB8C005ADD2A /* Request.swift */; };
+		904D80E72625CBB2005ADD2A /* ControlledOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D80E62625CBB2005ADD2A /* ControlledOperation.swift */; };
 		904E4FC125EE933C00C991A0 /* ToolCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904E4FBE25EE933C00C991A0 /* ToolCoordinator.swift */; };
 		904E4FC225EE933C00C991A0 /* ToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904E4FBF25EE933C00C991A0 /* ToolViewController.swift */; };
 		904E4FC325EE933C00C991A0 /* ToolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904E4FC025EE933C00C991A0 /* ToolViewModel.swift */; };
@@ -44,6 +47,26 @@
 		909F81E525ED4E9300574F63 /* HomeMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F81E425ED4E9300574F63 /* HomeMapViewController.xib */; };
 		909F81E825ED4ECB00574F63 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F81E725ED4ECB00574F63 /* SettingViewController.xib */; };
 		909F81EB25ED4EE800574F63 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F81EA25ED4EE800574F63 /* SearchViewController.xib */; };
+		90A061282625ED1500BA234E /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A061272625ED1500BA234E /* ServiceProtocol.swift */; };
+		90A0612B2625F36C00BA234E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0612A2625F36C00BA234E /* Service.swift */; };
+		90A0612E2626CF3100BA234E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0612D2626CF3100BA234E /* JSON.swift */; };
+		90A061312626DF2D00BA234E /* NormalMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A061302626DF2D00BA234E /* NormalMode.swift */; };
+		90A06147262DD27B00BA234E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06146262DD27B00BA234E /* Location.swift */; };
+		90A0614A262F071D00BA234E /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06149262F071D00BA234E /* UIView+Constraint.swift */; };
+		90A0614F262F0B4B00BA234E /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0614E262F0B4B00BA234E /* BaseTableViewController.swift */; };
+		90A06153262F2C2900BA234E /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06152262F2C2900BA234E /* GenericTableView.swift */; };
+		90A06156262F2C4800BA234E /* FadeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06155262F2C4800BA234E /* FadeTableView.swift */; };
+		90A06159262F2C7000BA234E /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06158262F2C7000BA234E /* TableViewAdapter.swift */; };
+		90A0615C262F2C9600BA234E /* GenericSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0615B262F2C9600BA234E /* GenericSection.swift */; };
+		90A0615F262F2CAF00BA234E /* GenericCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0615E262F2CAF00BA234E /* GenericCellData.swift */; };
+		90A06164262F2D1900BA234E /* GenericViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06163262F2D1900BA234E /* GenericViewCell.swift */; };
+		90A06168262F2D3400BA234E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06167262F2D3400BA234E /* CardView.swift */; };
+		90A0616B262F2D4F00BA234E /* CardViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0616A262F2D4F00BA234E /* CardViewStyle.swift */; };
+		90A0616E262F2DDC00BA234E /* UIView+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0616D262F2DDC00BA234E /* UIView+Card.swift */; };
+		90A06171262F2E6D00BA234E /* CellAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06170262F2E6D00BA234E /* CellAction.swift */; };
+		90A06174262F2EBB00BA234E /* UIContextualAction+CellAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06173262F2EBB00BA234E /* UIContextualAction+CellAction.swift */; };
+		90A06177262F2F0200BA234E /* BaseTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06176262F2F0200BA234E /* BaseTableViewModel.swift */; };
+		90A0617B262F2FDF00BA234E /* GrottoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0617A262F2FDF00BA234E /* GrottoTableViewController.swift */; };
 		90C14A2125D588F0003DACBD /* GrottoCenterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C14A2025D588F0003DACBD /* GrottoCenterConstants.swift */; };
 		90CD4F3825DACC2A00456C4C /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD4F3725DACC2A00456C4C /* Cave.swift */; };
 		90CD4F3B25DACDFD00456C4C /* Caver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD4F3A25DACDFD00456C4C /* Caver.swift */; };
@@ -58,6 +81,9 @@
 		903A958225F77BA7000B4551 /* FavorisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorisViewController.swift; sourceTree = "<group>"; };
 		903A958325F77BA7000B4551 /* FavorisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorisViewModel.swift; sourceTree = "<group>"; };
 		903A958925F77BB2000B4551 /* Favoris.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Favoris.xib; sourceTree = "<group>"; };
+		904D80E02625C79E005ADD2A /* Communicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communicator.swift; sourceTree = "<group>"; };
+		904D80E32625CB8C005ADD2A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		904D80E62625CBB2005ADD2A /* ControlledOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlledOperation.swift; sourceTree = "<group>"; };
 		904E4FBE25EE933C00C991A0 /* ToolCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCoordinator.swift; sourceTree = "<group>"; };
 		904E4FBF25EE933C00C991A0 /* ToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolViewController.swift; sourceTree = "<group>"; };
 		904E4FC025EE933C00C991A0 /* ToolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolViewModel.swift; sourceTree = "<group>"; };
@@ -93,6 +119,26 @@
 		909F81E425ED4E9300574F63 /* HomeMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMapViewController.xib; sourceTree = "<group>"; };
 		909F81E725ED4ECB00574F63 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		909F81EA25ED4EE800574F63 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		90A061272625ED1500BA234E /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		90A0612A2625F36C00BA234E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		90A0612D2626CF3100BA234E /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		90A061302626DF2D00BA234E /* NormalMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalMode.swift; sourceTree = "<group>"; };
+		90A06146262DD27B00BA234E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		90A06149262F071D00BA234E /* UIView+Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
+		90A0614E262F0B4B00BA234E /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		90A06152262F2C2900BA234E /* GenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableView.swift; sourceTree = "<group>"; };
+		90A06155262F2C4800BA234E /* FadeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeTableView.swift; sourceTree = "<group>"; };
+		90A06158262F2C7000BA234E /* TableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAdapter.swift; sourceTree = "<group>"; };
+		90A0615B262F2C9600BA234E /* GenericSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSection.swift; sourceTree = "<group>"; };
+		90A0615E262F2CAF00BA234E /* GenericCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCellData.swift; sourceTree = "<group>"; };
+		90A06163262F2D1900BA234E /* GenericViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewCell.swift; sourceTree = "<group>"; };
+		90A06167262F2D3400BA234E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		90A0616A262F2D4F00BA234E /* CardViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewStyle.swift; sourceTree = "<group>"; };
+		90A0616D262F2DDC00BA234E /* UIView+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Card.swift"; sourceTree = "<group>"; };
+		90A06170262F2E6D00BA234E /* CellAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAction.swift; sourceTree = "<group>"; };
+		90A06173262F2EBB00BA234E /* UIContextualAction+CellAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContextualAction+CellAction.swift"; sourceTree = "<group>"; };
+		90A06176262F2F0200BA234E /* BaseTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewModel.swift; sourceTree = "<group>"; };
+		90A0617A262F2FDF00BA234E /* GrottoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrottoTableViewController.swift; sourceTree = "<group>"; };
 		90C14A2025D588F0003DACBD /* GrottoCenterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrottoCenterConstants.swift; sourceTree = "<group>"; };
 		90CD4F3725DACC2A00456C4C /* Cave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cave.swift; sourceTree = "<group>"; };
 		90CD4F3A25DACDFD00456C4C /* Caver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caver.swift; sourceTree = "<group>"; };
@@ -129,6 +175,26 @@
 				903A958925F77BB2000B4551 /* Favoris.xib */,
 			);
 			path = Favoris;
+			sourceTree = "<group>";
+		};
+		904D80DD2625BEED005ADD2A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				90A061272625ED1500BA234E /* ServiceProtocol.swift */,
+				90A0612A2625F36C00BA234E /* Service.swift */,
+				90A061302626DF2D00BA234E /* NormalMode.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		904D80DE2625BF05005ADD2A /* Communicator */ = {
+			isa = PBXGroup;
+			children = (
+				904D80E02625C79E005ADD2A /* Communicator.swift */,
+				904D80E32625CB8C005ADD2A /* Request.swift */,
+				904D80E62625CBB2005ADD2A /* ControlledOperation.swift */,
+			);
+			path = Communicator;
 			sourceTree = "<group>";
 		};
 		904E4FBD25EE930900C991A0 /* Tool */ = {
@@ -189,6 +255,7 @@
 		909014E025E7B72600BB59F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				90A06179262F2FC600BA234E /* Commons */,
 				903A958025F77B98000B4551 /* Favoris */,
 				904E4FC925EE971000C991A0 /* Profil */,
 				904E4FBD25EE930900C991A0 /* Tool */,
@@ -255,12 +322,64 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		90A0614C262F0AFD00BA234E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				90A0614D262F0B2B00BA234E /* GenericTableView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		90A0614D262F0B2B00BA234E /* GenericTableView */ = {
+			isa = PBXGroup;
+			children = (
+				90A06161262F2D0500BA234E /* Datas */,
+				90A0614E262F0B4B00BA234E /* BaseTableViewController.swift */,
+				90A06152262F2C2900BA234E /* GenericTableView.swift */,
+				90A06155262F2C4800BA234E /* FadeTableView.swift */,
+				90A06158262F2C7000BA234E /* TableViewAdapter.swift */,
+				90A0615B262F2C9600BA234E /* GenericSection.swift */,
+				90A0615E262F2CAF00BA234E /* GenericCellData.swift */,
+				90A0616A262F2D4F00BA234E /* CardViewStyle.swift */,
+				90A06170262F2E6D00BA234E /* CellAction.swift */,
+				90A06173262F2EBB00BA234E /* UIContextualAction+CellAction.swift */,
+				90A06176262F2F0200BA234E /* BaseTableViewModel.swift */,
+			);
+			path = GenericTableView;
+			sourceTree = "<group>";
+		};
+		90A06161262F2D0500BA234E /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				90A06162262F2D0C00BA234E /* Commons */,
+				90A06167262F2D3400BA234E /* CardView.swift */,
+			);
+			path = Datas;
+			sourceTree = "<group>";
+		};
+		90A06162262F2D0C00BA234E /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				90A06163262F2D1900BA234E /* GenericViewCell.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		90A06179262F2FC600BA234E /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				90A0617A262F2FDF00BA234E /* GrottoTableViewController.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 		90E2FF1025D2EEF800E71AD0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				90CD4F3725DACC2A00456C4C /* Cave.swift */,
 				90CD4F3A25DACDFD00456C4C /* Caver.swift */,
 				90CD4F3D25DACED000456C4C /* Entrance.swift */,
+				90A06146262DD27B00BA234E /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,10 +387,14 @@
 		90E2FF1125D2EF2600E71AD0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				90A0614C262F0AFD00BA234E /* Components */,
+				904D80DE2625BF05005ADD2A /* Communicator */,
+				904D80DD2625BEED005ADD2A /* Service */,
 				90E2FF1225D2EF2D00E71AD0 /* Extension */,
 				90C14A2025D588F0003DACBD /* GrottoCenterConstants.swift */,
 				909014EF25E7B86500BB59F7 /* Coordinator.swift */,
 				9090155725E82D5800BB59F7 /* ViewController.swift */,
+				90A0612D2626CF3100BA234E /* JSON.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -279,6 +402,8 @@
 		90E2FF1225D2EF2D00E71AD0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				90A06149262F071D00BA234E /* UIView+Constraint.swift */,
+				90A0616D262F2DDC00BA234E /* UIView+Card.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -300,6 +425,7 @@
 			buildConfigurationList = 906F074225C855C300A4FEBB /* Build configuration list for PBXNativeTarget "Grotto Center" */;
 			buildPhases = (
 				A1484686C87CF2CDF55F63F7 /* [CP] Check Pods Manifest.lock */,
+				9079BA5C260B66DD00D65AC8 /* Bundle Version */,
 				906F072A25C855C200A4FEBB /* Sources */,
 				906F072B25C855C200A4FEBB /* Frameworks */,
 				906F072C25C855C200A4FEBB /* Resources */,
@@ -383,6 +509,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Grotto Center/Pods-Grotto Center-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9079BA5C260B66DD00D65AC8 /* Bundle Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion  $(date +\\\"%Y%m%d%H%M%S\\\")\" \"${INFOPLIST_FILE}\"\n";
+		};
 		A1484686C87CF2CDF55F63F7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,34 +556,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904D80E12625C79E005ADD2A /* Communicator.swift in Sources */,
 				9090156325E8FDC000BB59F7 /* HomeMapCoordinator.swift in Sources */,
+				90A06147262DD27B00BA234E /* Location.swift in Sources */,
 				909014F325E7BAA300BB59F7 /* AppCoordinator.swift in Sources */,
 				904E4FC325EE933C00C991A0 /* ToolViewModel.swift in Sources */,
+				90A0616E262F2DDC00BA234E /* UIView+Card.swift in Sources */,
+				90A06174262F2EBB00BA234E /* UIContextualAction+CellAction.swift in Sources */,
+				90A0614A262F071D00BA234E /* UIView+Constraint.swift in Sources */,
 				904E4FC125EE933C00C991A0 /* ToolCoordinator.swift in Sources */,
 				909F81E225ED4BF900574F63 /* TabBarViewModel.swift in Sources */,
+				90A06164262F2D1900BA234E /* GenericViewCell.swift in Sources */,
 				909F81E125ED4BF900574F63 /* TabBarViewController.swift in Sources */,
+				904D80E42625CB8C005ADD2A /* Request.swift in Sources */,
 				9090156B25E8FEC300BB59F7 /* SettingCoordinator.swift in Sources */,
+				90A06171262F2E6D00BA234E /* CellAction.swift in Sources */,
+				90A06153262F2C2900BA234E /* GenericTableView.swift in Sources */,
 				9090156D25E8FEC300BB59F7 /* SettingViewModel.swift in Sources */,
 				909014EA25E7B78000BB59F7 /* LaunchscreenCoordinator.swift in Sources */,
+				904D80E72625CBB2005ADD2A /* ControlledOperation.swift in Sources */,
 				9090156425E8FDC000BB59F7 /* HomeMapViewController.swift in Sources */,
 				903A958525F77BA7000B4551 /* FavorisViewController.swift in Sources */,
 				90CD4F3B25DACDFD00456C4C /* Caver.swift in Sources */,
+				90A06177262F2F0200BA234E /* BaseTableViewModel.swift in Sources */,
+				90A061282625ED1500BA234E /* ServiceProtocol.swift in Sources */,
 				909014E325E7B75300BB59F7 /* LaunchscreenViewController.swift in Sources */,
+				90A0617B262F2FDF00BA234E /* GrottoTableViewController.swift in Sources */,
 				904E4FC225EE933C00C991A0 /* ToolViewController.swift in Sources */,
 				903A958425F77BA7000B4551 /* FavorisCoordinator.swift in Sources */,
 				9090157625E8FEDC00BB59F7 /* SearchViewModel.swift in Sources */,
+				90A06159262F2C7000BA234E /* TableViewAdapter.swift in Sources */,
 				9090155825E82D5800BB59F7 /* ViewController.swift in Sources */,
 				90CD4F3825DACC2A00456C4C /* Cave.swift in Sources */,
+				90A0614F262F0B4B00BA234E /* BaseTableViewController.swift in Sources */,
+				90A06168262F2D3400BA234E /* CardView.swift in Sources */,
 				904E4FCF25EE973300C991A0 /* ProfilViewController.swift in Sources */,
+				90A0616B262F2D4F00BA234E /* CardViewStyle.swift in Sources */,
 				9090157525E8FEDC00BB59F7 /* SearchViewController.swift in Sources */,
+				90A0615C262F2C9600BA234E /* GenericSection.swift in Sources */,
 				9090157425E8FEDC00BB59F7 /* SearchCoordinator.swift in Sources */,
 				9090156525E8FDC000BB59F7 /* HomeMapViewModel.swift in Sources */,
 				909014E725E7B76200BB59F7 /* LaunchscreenViewModel.swift in Sources */,
+				90A0612E2626CF3100BA234E /* JSON.swift in Sources */,
 				903A958625F77BA7000B4551 /* FavorisViewModel.swift in Sources */,
+				90A06156262F2C4800BA234E /* FadeTableView.swift in Sources */,
+				90A061312626DF2D00BA234E /* NormalMode.swift in Sources */,
+				90A0612B2625F36C00BA234E /* Service.swift in Sources */,
 				9090156C25E8FEC300BB59F7 /* SettingViewController.swift in Sources */,
 				904E4FCE25EE973300C991A0 /* ProfilCoordinator.swift in Sources */,
 				909014F025E7B86500BB59F7 /* Coordinator.swift in Sources */,
 				909F81E025ED4BF900574F63 /* TabBarCoordinator.swift in Sources */,
+				90A0615F262F2CAF00BA234E /* GenericCellData.swift in Sources */,
 				90CD4F3E25DACED000456C4C /* Entrance.swift in Sources */,
 				904E4FD025EE973300C991A0 /* ProfilViewModel.swift in Sources */,
 				906F073225C855C200A4FEBB /* AppDelegate.swift in Sources */,

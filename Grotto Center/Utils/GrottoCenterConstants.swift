@@ -9,7 +9,7 @@ import Foundation
 
 class GrottoCenterConstants {
   static var adresse: String {
-    return "ttps://beta.grottocenter.org/api/v1"
+    return "https://beta.grottocenter.org/api/v1"
   }
 
   // MARK: - AUTHENTIFICATION
