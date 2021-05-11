@@ -7,32 +7,25 @@
 
 import UIKit
 import RxSwift
-import RxRelay
+import RxCocoa
 
 class HomeMapViewModel {
   
   let coordinator: HomeMapCoordinator
 
   var disposeBag = DisposeBag()
-  
+
+  var mapPoi = BehaviorRelay<[MapPoi]>(value: [])
+
   init(coordinator: HomeMapCoordinator) {
     self.coordinator = coordinator
 
-    getEntrance()
   }
 
-  func getEntrance() {
-    Service.shared.getEntrance(id: 5550)
-      .subscribe(onNext: {[weak self] entrance in
-        print(entrance)
-      })
-      .disposed(by: disposeBag)
-  }
-
-  func getCave() {
-    Service.shared.getCave(id: 5550)
-      .subscribe(onNext: {[weak self] cave in
-        print(cave)
+  func getGeolocEntrance(edges: Edges) {
+    Service.shared.getGeoloEntrances(edges: edges)
+      .subscribe(onNext: { [weak self] entrances in
+        self?.mapPoi.accept(entrances)
       })
       .disposed(by: disposeBag)
   }

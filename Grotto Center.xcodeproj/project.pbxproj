@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901CA253263AEC47005DDE7B /* RemoteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CA252263AEC47005DDE7B /* RemoteConfig.swift */; };
+		901CA2572640523C005DDE7B /* MKMapView+Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CA2562640523C005DDE7B /* MKMapView+Edges.swift */; };
+		901CA2592641A8B7005DDE7B /* MapPoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CA2582641A8B7005DDE7B /* MapPoi.swift */; };
 		903A958425F77BA7000B4551 /* FavorisCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A958125F77BA7000B4551 /* FavorisCoordinator.swift */; };
 		903A958525F77BA7000B4551 /* FavorisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A958225F77BA7000B4551 /* FavorisViewController.swift */; };
 		903A958625F77BA7000B4551 /* FavorisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A958325F77BA7000B4551 /* FavorisViewModel.swift */; };
@@ -22,6 +25,7 @@
 		904E4FCF25EE973300C991A0 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904E4FCC25EE973300C991A0 /* ProfilViewController.swift */; };
 		904E4FD025EE973300C991A0 /* ProfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904E4FCD25EE973300C991A0 /* ProfilViewModel.swift */; };
 		904E4FD425EE974200C991A0 /* Profil.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904E4FD325EE974200C991A0 /* Profil.xib */; };
+		906C6ACC264692D100E0469A /* PoiAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C6ACB264692D100E0469A /* PoiAnnotationView.swift */; };
 		906F073225C855C200A4FEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906F073125C855C200A4FEBB /* AppDelegate.swift */; };
 		906F073B25C855C300A4FEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906F073A25C855C300A4FEBB /* Assets.xcassets */; };
 		909014E325E7B75300BB59F7 /* LaunchscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909014E225E7B75300BB59F7 /* LaunchscreenViewController.swift */; };
@@ -77,6 +81,9 @@
 /* Begin PBXFileReference section */
 		3DE93731B0521C833F7E2AED /* Pods-Grotto Center.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grotto Center.release.xcconfig"; path = "Target Support Files/Pods-Grotto Center/Pods-Grotto Center.release.xcconfig"; sourceTree = "<group>"; };
 		75D981AA48603A12B2467184 /* Pods-Grotto Center.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grotto Center.debug.xcconfig"; path = "Target Support Files/Pods-Grotto Center/Pods-Grotto Center.debug.xcconfig"; sourceTree = "<group>"; };
+		901CA252263AEC47005DDE7B /* RemoteConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfig.swift; sourceTree = "<group>"; };
+		901CA2562640523C005DDE7B /* MKMapView+Edges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Edges.swift"; sourceTree = "<group>"; };
+		901CA2582641A8B7005DDE7B /* MapPoi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoi.swift; sourceTree = "<group>"; };
 		903A958125F77BA7000B4551 /* FavorisCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorisCoordinator.swift; sourceTree = "<group>"; };
 		903A958225F77BA7000B4551 /* FavorisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorisViewController.swift; sourceTree = "<group>"; };
 		903A958325F77BA7000B4551 /* FavorisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorisViewModel.swift; sourceTree = "<group>"; };
@@ -92,6 +99,7 @@
 		904E4FCC25EE973300C991A0 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
 		904E4FCD25EE973300C991A0 /* ProfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewModel.swift; sourceTree = "<group>"; };
 		904E4FD325EE974200C991A0 /* Profil.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profil.xib; sourceTree = "<group>"; };
+		906C6ACB264692D100E0469A /* PoiAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiAnnotationView.swift; sourceTree = "<group>"; };
 		906F072E25C855C200A4FEBB /* Grotto Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grotto Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		906F073125C855C200A4FEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		906F073A25C855C300A4FEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +191,7 @@
 				90A061272625ED1500BA234E /* ServiceProtocol.swift */,
 				90A0612A2625F36C00BA234E /* Service.swift */,
 				90A061302626DF2D00BA234E /* NormalMode.swift */,
+				901CA252263AEC47005DDE7B /* RemoteConfig.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -326,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				90A0614D262F0B2B00BA234E /* GenericTableView */,
+				906C6ACB264692D100E0469A /* PoiAnnotationView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -380,6 +390,7 @@
 				90CD4F3A25DACDFD00456C4C /* Caver.swift */,
 				90CD4F3D25DACED000456C4C /* Entrance.swift */,
 				90A06146262DD27B00BA234E /* Location.swift */,
+				901CA2582641A8B7005DDE7B /* MapPoi.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -404,6 +415,7 @@
 			children = (
 				90A06149262F071D00BA234E /* UIView+Constraint.swift */,
 				90A0616D262F2DDC00BA234E /* UIView+Card.swift */,
+				901CA2562640523C005DDE7B /* MKMapView+Edges.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -557,8 +569,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				904D80E12625C79E005ADD2A /* Communicator.swift in Sources */,
+				901CA2592641A8B7005DDE7B /* MapPoi.swift in Sources */,
 				9090156325E8FDC000BB59F7 /* HomeMapCoordinator.swift in Sources */,
 				90A06147262DD27B00BA234E /* Location.swift in Sources */,
+				901CA253263AEC47005DDE7B /* RemoteConfig.swift in Sources */,
 				909014F325E7BAA300BB59F7 /* AppCoordinator.swift in Sources */,
 				904E4FC325EE933C00C991A0 /* ToolViewModel.swift in Sources */,
 				90A0616E262F2DDC00BA234E /* UIView+Card.swift in Sources */,
@@ -576,6 +590,7 @@
 				909014EA25E7B78000BB59F7 /* LaunchscreenCoordinator.swift in Sources */,
 				904D80E72625CBB2005ADD2A /* ControlledOperation.swift in Sources */,
 				9090156425E8FDC000BB59F7 /* HomeMapViewController.swift in Sources */,
+				906C6ACC264692D100E0469A /* PoiAnnotationView.swift in Sources */,
 				903A958525F77BA7000B4551 /* FavorisViewController.swift in Sources */,
 				90CD4F3B25DACDFD00456C4C /* Caver.swift in Sources */,
 				90A06177262F2F0200BA234E /* BaseTableViewModel.swift in Sources */,
@@ -605,6 +620,7 @@
 				9090156C25E8FEC300BB59F7 /* SettingViewController.swift in Sources */,
 				904E4FCE25EE973300C991A0 /* ProfilCoordinator.swift in Sources */,
 				909014F025E7B86500BB59F7 /* Coordinator.swift in Sources */,
+				901CA2572640523C005DDE7B /* MKMapView+Edges.swift in Sources */,
 				909F81E025ED4BF900574F63 /* TabBarCoordinator.swift in Sources */,
 				90A0615F262F2CAF00BA234E /* GenericCellData.swift in Sources */,
 				90CD4F3E25DACED000456C4C /* Entrance.swift in Sources */,

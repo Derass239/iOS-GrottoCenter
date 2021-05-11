@@ -33,7 +33,7 @@ class TabBarViewController: UITabBarController {
   override func viewWillAppear(_ animated: Bool) {
     if freshLaunch == true {
       freshLaunch = false
-      self.selectedIndex = 2 // 5th tab
+      self.selectedIndex = 2
     }
   }
 

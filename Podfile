@@ -11,7 +11,9 @@ target 'Grotto Center' do
   pod 'RxCocoa', '6.0.0'
   pod 'Action', '4.3.0'
   pod 'Firebase/Analytics'
+  pod 'Firebase/RemoteConfig'
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftLint'
+  pod 'RxMKMapView'
 
 end

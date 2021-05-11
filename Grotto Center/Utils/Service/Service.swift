@@ -37,6 +37,11 @@ class Service {
     return Observable.error(NSError(domain: "No Service", code: -1, userInfo: nil))
   }
 
+  func getGeoloEntrances(edges: Edges) -> Observable<[MapPoi]> {
+    guard let service = service else { return noService() }
+    return service.getGeoloEntrances(edges: edges)
+  }
+
   func getCave(id: Int) -> Observable<Cave> {
     guard let service = service else { return noService() }
     return service.getCave(id: id)

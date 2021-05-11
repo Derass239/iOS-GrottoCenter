@@ -39,7 +39,7 @@ open class TableViewAdapter: NSObject, UITableViewDelegate, UITableViewDataSourc
     super.init()
     self.viewController = viewController
     sections
-      .observeOn(MainScheduler.instance)
+      .observe(on: MainScheduler.instance)
       .subscribe(onNext: { [weak self] sections in
         self?.sections = sections
       }).disposed(by: disposeBag)

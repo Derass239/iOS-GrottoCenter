@@ -9,6 +9,11 @@ PODS:
     - FirebaseAnalytics (= 7.5.0)
   - Firebase/CoreOnly (7.5.0):
     - FirebaseCore (= 7.5.0)
+  - Firebase/RemoteConfig (7.5.0):
+    - Firebase/CoreOnly
+    - FirebaseRemoteConfig (~> 7.5.0)
+  - FirebaseABTesting (7.11.0):
+    - FirebaseCore (~> 7.0)
   - FirebaseAnalytics (7.5.0):
     - FirebaseCore (~> 7.0)
     - FirebaseInstallations (~> 7.0)
@@ -32,6 +37,12 @@ PODS:
     - GoogleUtilities/Environment (~> 7.0)
     - GoogleUtilities/UserDefaults (~> 7.0)
     - PromisesObjC (~> 1.2)
+  - FirebaseRemoteConfig (7.5.0):
+    - FirebaseABTesting (~> 7.0)
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
   - GoogleAppMeasurement (7.5.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
     - GoogleUtilities/MethodSwizzler (~> 7.0)
@@ -69,6 +80,9 @@ PODS:
   - RxCocoa (6.0.0):
     - RxRelay (= 6.0.0)
     - RxSwift (= 6.0.0)
+  - RxMKMapView (6.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - RxRelay (6.0.0):
     - RxSwift (= 6.0.0)
   - RxSwift (6.0.0)
@@ -77,8 +91,10 @@ PODS:
 DEPENDENCIES:
   - Action (= 4.3.0)
   - Firebase/Analytics
+  - Firebase/RemoteConfig
   - IQKeyboardManagerSwift
   - RxCocoa (= 6.0.0)
+  - RxMKMapView
   - RxSwift (= 6.0.0)
   - SwiftLint
 
@@ -86,10 +102,12 @@ SPEC REPOS:
   trunk:
     - Action
     - Firebase
+    - FirebaseABTesting
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseInstallations
+    - FirebaseRemoteConfig
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
@@ -97,6 +115,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - RxCocoa
+    - RxMKMapView
     - RxRelay
     - RxSwift
     - SwiftLint
@@ -104,10 +123,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Action: 9891cd1b0a9047557d7e58e8dfae743e19d08197
   Firebase: fd5e4d2b756292c6e7ee6faac1eb320225d6e97e
+  FirebaseABTesting: e66f1f80747792630d9b292966de206d5df9853b
   FirebaseAnalytics: 00b7f74571d346ee1ffb9bf0a2e6f2ffff222bcc
   FirebaseCore: 06a2b68af8901f2244eb989419eb89edc3789b4d
   FirebaseCoreDiagnostics: 35685db68b11fe7d19d2d8b557fd7e3a56ac81cc
   FirebaseInstallations: a46ae59915f0931e18814164849cd0354bea24ed
+  FirebaseRemoteConfig: 98dac0952e07858dbd70ad0f26d470eb7fa37ee4
   GoogleAppMeasurement: 65a1071e5f52f63ab03d0a4d814a54fd762d885a
   GoogleDataTransport: 1024b1a4dfbd7a0e92cb20d7e0a6f1fb66b449a4
   GoogleUtilities: d866834472f1324d080496bc67ab3ce5d0d46027
@@ -115,10 +136,11 @@ SPEC CHECKSUMS:
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
+  RxMKMapView: 9e33a1f1a6bdd96ef4d489d587df40b0b9017c20
   RxRelay: 8d593be109c06ea850df027351beba614b012ffb
   RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
 
-PODFILE CHECKSUM: 258c3f223e6a2be43f1dcbd723b06bd6e93be2d5
+PODFILE CHECKSUM: dd2c451d50eaafbc88bf6876b9bc800112b560f8
 
 COCOAPODS: 1.10.1

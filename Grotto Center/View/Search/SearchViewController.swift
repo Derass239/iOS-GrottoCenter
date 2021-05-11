@@ -7,12 +7,15 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: GrottoTableViewController {
   
   var viewModel: SearchViewModel!
+  override var baseTableViewModel: BaseTableViewModel { return viewModel }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
+    setupFullScreenTableView()
+
   }
 }

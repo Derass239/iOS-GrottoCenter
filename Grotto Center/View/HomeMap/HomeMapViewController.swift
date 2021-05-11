@@ -6,45 +6,86 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import RxMKMapView
+import MapKit
 
-class HomeMapViewController: GrottoTableViewController {
+class HomeMapViewController: ViewController {
 
-  var headerView: UIView = { UIView().withConstraint() }()
-  var headerTitle: UILabel = {
-    let label = UILabel().withConstraint()
-    label.numberOfLines = 0
-    return label
-  }()
+  var mapView: MKMapView = { MKMapView().withConstraint() }()
 
   var viewModel: HomeMapViewModel!
+  let disposeBag = DisposeBag()
 
+  let segmentedControl: UISegmentedControl = {
+    let segmentedControl = UISegmentedControl()
+    segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+    return segmentedControl
+  }()
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    headerTitle.text = "HELLO"
-    
+    configureSegmentControl()
+    mapView.register(PoiAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+
+
+    mapView.rx
+      .setDelegate(self)
+      .disposed(by: disposeBag)
+
+    mapView.rx.didFinishLoadingMap
+      .subscribe(onNext: { [weak self] _ in
+        self?.viewModel.getGeolocEntrance(edges: (self?.mapView.edgePoints())!)
+      }).disposed(by: disposeBag)
+
+    viewModel.mapPoi
+      .observe(on: MainScheduler.instance)
+      .subscribe(onNext: {[weak self] poi in
+        for point in poi {
+          let annotation = MKPointAnnotation()
+          annotation.title = point.name
+          annotation.coordinate = point.coordinate
+          self?.mapView.addAnnotation(annotation)
+        }
+      })
+      .disposed(by: disposeBag)
+  }
+
+  func configureSegmentControl() {
+    segmentedControl.insertSegment(withTitle: "Stantard", at: 0, animated: false)
+    segmentedControl.insertSegment(withTitle: "Satellite", at: 1, animated: false)
+    segmentedControl.insertSegment(withTitle: "Hybride", at: 2, animated: false)
+    segmentedControl.selectedSegmentIndex = 0
+    segmentedControl.rx.selectedSegmentIndex.asObservable()
+      .subscribe(onNext: {
+        switch $0 {
+        case 0 : self.mapView.mapType = .standard
+        case 1 : self.mapView.mapType = .satellite
+        case 2 : self.mapView.mapType = .hybrid
+        default: break
+        }
+      }).disposed(by: disposeBag)
   }
 
   override func addSubviews() {
-    view.addSubview(headerView)
-    headerView.addSubview(headerTitle)
-    view.addSubview(tableView)
+    view.addSubview(mapView)
+    view.addSubview(segmentedControl)
   }
 
   override func setupLayout() {
     NSLayoutConstraint.activate([
-      headerView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
-      headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-      headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-      headerTitle.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 30),
-      headerTitle.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -30),
-      headerTitle.leadingAnchor.constraint(equalTo: headerView.layoutMarginsGuide.leadingAnchor, constant: 16),
-      headerTitle.trailingAnchor.constraint(equalTo: headerView.layoutMarginsGuide.trailingAnchor, constant: -16),
-      tableView.topAnchor.constraint(equalTo: headerView.bottomAnchor),
-      tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-      tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-      tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+      mapView.topAnchor.constraint(equalTo: view.topAnchor),
+      mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+      mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+      mapView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+      segmentedControl.bottomAnchor.constraint(equalTo: mapView.bottomAnchor, constant: 0),
+      segmentedControl.trailingAnchor.constraint(equalTo: mapView.trailingAnchor, constant: -16)
     ])
   }
+}
+
+extension HomeMapViewController: MKMapViewDelegate {
+
 }

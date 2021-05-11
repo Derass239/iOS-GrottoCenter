@@ -11,6 +11,7 @@ import RxSwift
 protocol ServiceProtocol {
 
   // MARK: - GETS
+  func getGeoloEntrances(edges: Edges) -> Observable<[MapPoi]>
   func getCave(id: Int) -> Observable<Cave>
   func getEntrance(id: Int) -> Observable<Entrance>
   

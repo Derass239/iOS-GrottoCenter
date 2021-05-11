@@ -9,16 +9,17 @@ import UIKit
 
 class HomeMapCoordinator: Coordinator {
   
-  unowned var navigationController: UINavigationController
+  unowned let navigationController: UINavigationController
   
   init(navigationController: UINavigationController) {
     self.navigationController = navigationController
   }
   
   func start() {
-    let viewController = HomeMapViewController(nibName: nil, bundle: nil)
+    let viewController = HomeMapViewController()
     viewController.viewModel = HomeMapViewModel(coordinator: self)
     
     navigationController.pushViewController(viewController, animated: true)
   }
+
 }
