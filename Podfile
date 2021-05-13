@@ -15,5 +15,6 @@ target 'Grotto Center' do
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftLint'
   pod 'RxMKMapView'
+  pod "Cluster"
 
 end

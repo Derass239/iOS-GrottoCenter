@@ -2,6 +2,7 @@ PODS:
   - Action (4.3.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - Cluster (3.0.3)
   - Firebase/Analytics (7.5.0):
     - Firebase/Core
   - Firebase/Core (7.5.0):
@@ -90,6 +91,7 @@ PODS:
 
 DEPENDENCIES:
   - Action (= 4.3.0)
+  - Cluster
   - Firebase/Analytics
   - Firebase/RemoteConfig
   - IQKeyboardManagerSwift
@@ -101,6 +103,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Action
+    - Cluster
     - Firebase
     - FirebaseABTesting
     - FirebaseAnalytics
@@ -122,6 +125,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Action: 9891cd1b0a9047557d7e58e8dfae743e19d08197
+  Cluster: d72510594f60d901905953aafdc811d1888177ae
   Firebase: fd5e4d2b756292c6e7ee6faac1eb320225d6e97e
   FirebaseABTesting: e66f1f80747792630d9b292966de206d5df9853b
   FirebaseAnalytics: 00b7f74571d346ee1ffb9bf0a2e6f2ffff222bcc
@@ -141,6 +145,6 @@ SPEC CHECKSUMS:
   RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
 
-PODFILE CHECKSUM: dd2c451d50eaafbc88bf6876b9bc800112b560f8
+PODFILE CHECKSUM: ef1db9de32af77861506ac199937b3e55fe43fbb
 
 COCOAPODS: 1.10.1

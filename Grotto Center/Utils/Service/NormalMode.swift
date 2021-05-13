@@ -47,7 +47,7 @@ extension NormalMode: ServiceProtocol {
         .subscribe(onNext: { json in
           let rep = JSON(json)
           var entrances = [MapPoi]()
-          for entrance in rep.value([[:]])/*.prefix(10000)*/ {
+          for entrance in rep.value([[:]]) {
             guard let entrance = entrance as? [String: Any] else {continue}
             entrances.append(MapPoi(entrance, type: .entrance))
           }
