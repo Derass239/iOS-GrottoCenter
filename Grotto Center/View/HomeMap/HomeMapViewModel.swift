@@ -16,6 +16,7 @@ class HomeMapViewModel {
   var disposeBag = DisposeBag()
 
   var mapPoi = BehaviorRelay<[MapPoi]>(value: [])
+  let mapUrl = URL(string: "mapbox://styles/derass/ckomz31ky0v8t17pdzxgoe7cq")
 
   init(coordinator: HomeMapCoordinator) {
     self.coordinator = coordinator

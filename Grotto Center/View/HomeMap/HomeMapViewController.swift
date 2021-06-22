@@ -8,15 +8,19 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import RxMKMapView
-import MapKit
+import Mapbox
+import ClusterKit
 
 class HomeMapViewController: ViewController {
 
-  var mapView: MKMapView = { MKMapView().withConstraint() }()
-
   var viewModel: HomeMapViewModel!
   let disposeBag = DisposeBag()
+
+  var mapView: MGLMapView = {
+    let mapView = MGLMapView().withConstraint()
+    mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    return mapView
+  }()
 
   let segmentedControl: UISegmentedControl = {
     let segmentedControl = UISegmentedControl()
@@ -24,46 +28,53 @@ class HomeMapViewController: ViewController {
     return segmentedControl
   }()
 
+  let algorithm: CKNonHierarchicalDistanceBasedAlgorithm = {
+    let algorithm = CKNonHierarchicalDistanceBasedAlgorithm()
+    algorithm.cellSize = 100
+    return algorithm
+  }()
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    configureMapView()
     configureSegmentControl()
-    mapView.register(PoiAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
-
-
-    mapView.rx
-      .setDelegate(self)
-      .disposed(by: disposeBag)
-
-    mapView.rx.didFinishLoadingMap
-      .subscribe(onNext: { [weak self] _ in
-        self?.viewModel.getGeolocEntrance(edges: (self?.mapView.edgePoints())!)
-      }).disposed(by: disposeBag)
 
     viewModel.mapPoi
       .observe(on: MainScheduler.instance)
       .subscribe(onNext: {[weak self] poi in
+        guard let self = self else { return }
+        var pointAnnotations = [MapPoi]()
         for point in poi {
-          let annotation = MKPointAnnotation()
-          annotation.title = point.name
-          annotation.coordinate = point.coordinate
-          self?.mapView.addAnnotation(annotation)
+          pointAnnotations.append(point)
         }
+        self.mapView.clusterManager.annotations = pointAnnotations
       })
       .disposed(by: disposeBag)
+  }
+
+  func configureMapView() {
+    mapView.delegate = self
+    mapView.clusterManager.algorithm = algorithm
+    mapView.clusterManager.marginFactor = 1
+    mapView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height)
+    mapView.setCenter(CLLocationCoordinate2D(latitude: 46.123552, longitude: 2.606655), zoomLevel: 5, animated: false)
+    mapView.styleURL = viewModel.mapUrl
+    mapView.scaleBar.isHidden = false
+    mapView.attributionButtonPosition = .bottomLeft
+    mapView.attributionButtonMargins.x = mapView.logoView.frame.width + 10
+    mapView.compassView.isHidden = false
   }
 
   func configureSegmentControl() {
     segmentedControl.insertSegment(withTitle: "Stantard", at: 0, animated: false)
     segmentedControl.insertSegment(withTitle: "Satellite", at: 1, animated: false)
-    segmentedControl.insertSegment(withTitle: "Hybride", at: 2, animated: false)
     segmentedControl.selectedSegmentIndex = 0
     segmentedControl.rx.selectedSegmentIndex.asObservable()
       .subscribe(onNext: {
         switch $0 {
-        case 0 : self.mapView.mapType = .standard
-        case 1 : self.mapView.mapType = .satellite
-        case 2 : self.mapView.mapType = .hybrid
+        case 0 : self.mapView.styleURL = self.viewModel.mapUrl
+        case 1 : self.mapView.styleURL = MGLStyle.satelliteStyleURL
         default: break
         }
       }).disposed(by: disposeBag)
@@ -76,16 +87,13 @@ class HomeMapViewController: ViewController {
 
   override func setupLayout() {
     NSLayoutConstraint.activate([
-      mapView.topAnchor.constraint(equalTo: view.topAnchor),
+      mapView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
       mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
       mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
       mapView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-      segmentedControl.bottomAnchor.constraint(equalTo: mapView.bottomAnchor, constant: 0),
-      segmentedControl.trailingAnchor.constraint(equalTo: mapView.trailingAnchor, constant: -16)
+      segmentedControl.bottomAnchor.constraint(equalTo: mapView.bottomAnchor, constant: -2),
+      segmentedControl.trailingAnchor.constraint(equalTo: mapView.trailingAnchor, constant: -8)
     ])
   }
-}
-
-extension HomeMapViewController: MKMapViewDelegate {
-
+  
 }

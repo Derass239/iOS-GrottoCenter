@@ -2,6 +2,10 @@ PODS:
   - Action (4.3.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - ClusterKit/Core (0.5.0)
+  - ClusterKit/Mapbox (0.5.0):
+    - ClusterKit/Core
+    - Mapbox-iOS-SDK (~> 6.3.0)
   - Firebase/Analytics (7.5.0):
     - Firebase/Core
   - Firebase/Core (7.5.0):
@@ -71,6 +75,9 @@ PODS:
   - GoogleUtilities/UserDefaults (7.2.0):
     - GoogleUtilities/Logger
   - IQKeyboardManagerSwift (6.5.6)
+  - Mapbox-iOS-SDK (6.3.0):
+    - MapboxMobileEvents (~> 0.10.4)
+  - MapboxMobileEvents (0.10.8)
   - nanopb (2.30907.0):
     - nanopb/decode (= 2.30907.0)
     - nanopb/encode (= 2.30907.0)
@@ -90,9 +97,11 @@ PODS:
 
 DEPENDENCIES:
   - Action (= 4.3.0)
+  - ClusterKit/Mapbox (from `https://github.com/Derass239/ClusterKit.git`)
   - Firebase/Analytics
   - Firebase/RemoteConfig
   - IQKeyboardManagerSwift
+  - Mapbox-iOS-SDK (~> 6.3.0)
   - RxCocoa (= 6.0.0)
   - RxMKMapView
   - RxSwift (= 6.0.0)
@@ -112,6 +121,8 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - IQKeyboardManagerSwift
+    - Mapbox-iOS-SDK
+    - MapboxMobileEvents
     - nanopb
     - PromisesObjC
     - RxCocoa
@@ -120,8 +131,18 @@ SPEC REPOS:
     - RxSwift
     - SwiftLint
 
+EXTERNAL SOURCES:
+  ClusterKit:
+    :git: https://github.com/Derass239/ClusterKit.git
+
+CHECKOUT OPTIONS:
+  ClusterKit:
+    :commit: 1eafeecbe41e32f46a4c126bba384396eb430edf
+    :git: https://github.com/Derass239/ClusterKit.git
+
 SPEC CHECKSUMS:
   Action: 9891cd1b0a9047557d7e58e8dfae743e19d08197
+  ClusterKit: d5cb20ef1e00f303dd35cdb6b3e9e7c8a28072a9
   Firebase: fd5e4d2b756292c6e7ee6faac1eb320225d6e97e
   FirebaseABTesting: e66f1f80747792630d9b292966de206d5df9853b
   FirebaseAnalytics: 00b7f74571d346ee1ffb9bf0a2e6f2ffff222bcc
@@ -133,6 +154,8 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 1024b1a4dfbd7a0e92cb20d7e0a6f1fb66b449a4
   GoogleUtilities: d866834472f1324d080496bc67ab3ce5d0d46027
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Mapbox-iOS-SDK: 2563ed87ead6ec08f1c2090873977b8a7be335a8
+  MapboxMobileEvents: 36ff53b135aac486eed94b61f813c7967a0c2c6f
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
@@ -141,6 +164,6 @@ SPEC CHECKSUMS:
   RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
 
-PODFILE CHECKSUM: dd2c451d50eaafbc88bf6876b9bc800112b560f8
+PODFILE CHECKSUM: caa312585a4078631fc9919863a5cefacbe82a0c
 
 COCOAPODS: 1.10.1

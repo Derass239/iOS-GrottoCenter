@@ -15,5 +15,7 @@ target 'Grotto Center' do
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftLint'
   pod 'RxMKMapView'
+  pod 'Mapbox-iOS-SDK', '~> 6.3.0'
+  pod 'ClusterKit/Mapbox', :git => 'https://github.com/Derass239/ClusterKit.git'
 
 end

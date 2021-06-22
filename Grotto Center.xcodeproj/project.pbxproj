@@ -10,6 +10,9 @@
 		901CA253263AEC47005DDE7B /* RemoteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CA252263AEC47005DDE7B /* RemoteConfig.swift */; };
 		901CA2572640523C005DDE7B /* MKMapView+Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CA2562640523C005DDE7B /* MKMapView+Edges.swift */; };
 		901CA2592641A8B7005DDE7B /* MapPoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CA2582641A8B7005DDE7B /* MapPoi.swift */; };
+		902A25F62670A8500071803C /* CaveDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902A25F32670A8500071803C /* CaveDetailCoordinator.swift */; };
+		902A25F72670A8500071803C /* CaveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902A25F42670A8500071803C /* CaveDetailViewController.swift */; };
+		902A25F82670A8500071803C /* CaveDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902A25F52670A8500071803C /* CaveDetailViewModel.swift */; };
 		903A958425F77BA7000B4551 /* FavorisCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A958125F77BA7000B4551 /* FavorisCoordinator.swift */; };
 		903A958525F77BA7000B4551 /* FavorisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A958225F77BA7000B4551 /* FavorisViewController.swift */; };
 		903A958625F77BA7000B4551 /* FavorisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A958325F77BA7000B4551 /* FavorisViewModel.swift */; };
@@ -21,13 +24,12 @@
 		904E4FC225EE933C00C991A0 /* ToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904E4FBF25EE933C00C991A0 /* ToolViewController.swift */; };
 		904E4FC325EE933C00C991A0 /* ToolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904E4FC025EE933C00C991A0 /* ToolViewModel.swift */; };
 		904E4FC725EE934E00C991A0 /* ToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904E4FC625EE934E00C991A0 /* ToolViewController.xib */; };
-		904E4FCE25EE973300C991A0 /* ProfilCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904E4FCB25EE973300C991A0 /* ProfilCoordinator.swift */; };
-		904E4FCF25EE973300C991A0 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904E4FCC25EE973300C991A0 /* ProfilViewController.swift */; };
-		904E4FD025EE973300C991A0 /* ProfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904E4FCD25EE973300C991A0 /* ProfilViewModel.swift */; };
-		904E4FD425EE974200C991A0 /* Profil.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904E4FD325EE974200C991A0 /* Profil.xib */; };
 		906C6ACC264692D100E0469A /* PoiAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906C6ACB264692D100E0469A /* PoiAnnotationView.swift */; };
 		906F073225C855C200A4FEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906F073125C855C200A4FEBB /* AppDelegate.swift */; };
 		906F073B25C855C300A4FEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906F073A25C855C300A4FEBB /* Assets.xcassets */; };
+		907B585A2667C99A00F96D38 /* HomeMapViewController+MapBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907B58592667C99A00F96D38 /* HomeMapViewController+MapBox.swift */; };
+		907B585C2667CAC900F96D38 /* MBXAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907B585B2667CAC900F96D38 /* MBXAnnotationView.swift */; };
+		907B585E2667CB1500F96D38 /* MBXCluserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907B585D2667CB1500F96D38 /* MBXCluserView.swift */; };
 		909014E325E7B75300BB59F7 /* LaunchscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909014E225E7B75300BB59F7 /* LaunchscreenViewController.swift */; };
 		909014E725E7B76200BB59F7 /* LaunchscreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909014E625E7B76200BB59F7 /* LaunchscreenViewModel.swift */; };
 		909014EA25E7B78000BB59F7 /* LaunchscreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909014E925E7B78000BB59F7 /* LaunchscreenCoordinator.swift */; };
@@ -84,6 +86,9 @@
 		901CA252263AEC47005DDE7B /* RemoteConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfig.swift; sourceTree = "<group>"; };
 		901CA2562640523C005DDE7B /* MKMapView+Edges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Edges.swift"; sourceTree = "<group>"; };
 		901CA2582641A8B7005DDE7B /* MapPoi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoi.swift; sourceTree = "<group>"; };
+		902A25F32670A8500071803C /* CaveDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaveDetailCoordinator.swift; sourceTree = "<group>"; };
+		902A25F42670A8500071803C /* CaveDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaveDetailViewController.swift; sourceTree = "<group>"; };
+		902A25F52670A8500071803C /* CaveDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaveDetailViewModel.swift; sourceTree = "<group>"; };
 		903A958125F77BA7000B4551 /* FavorisCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorisCoordinator.swift; sourceTree = "<group>"; };
 		903A958225F77BA7000B4551 /* FavorisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorisViewController.swift; sourceTree = "<group>"; };
 		903A958325F77BA7000B4551 /* FavorisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorisViewModel.swift; sourceTree = "<group>"; };
@@ -95,15 +100,14 @@
 		904E4FBF25EE933C00C991A0 /* ToolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolViewController.swift; sourceTree = "<group>"; };
 		904E4FC025EE933C00C991A0 /* ToolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolViewModel.swift; sourceTree = "<group>"; };
 		904E4FC625EE934E00C991A0 /* ToolViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolViewController.xib; sourceTree = "<group>"; };
-		904E4FCB25EE973300C991A0 /* ProfilCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilCoordinator.swift; sourceTree = "<group>"; };
-		904E4FCC25EE973300C991A0 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
-		904E4FCD25EE973300C991A0 /* ProfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewModel.swift; sourceTree = "<group>"; };
-		904E4FD325EE974200C991A0 /* Profil.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profil.xib; sourceTree = "<group>"; };
 		906C6ACB264692D100E0469A /* PoiAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiAnnotationView.swift; sourceTree = "<group>"; };
 		906F072E25C855C200A4FEBB /* Grotto Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grotto Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		906F073125C855C200A4FEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		906F073A25C855C300A4FEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		906F073F25C855C300A4FEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907B58592667C99A00F96D38 /* HomeMapViewController+MapBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeMapViewController+MapBox.swift"; sourceTree = "<group>"; };
+		907B585B2667CAC900F96D38 /* MBXAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBXAnnotationView.swift; sourceTree = "<group>"; };
+		907B585D2667CB1500F96D38 /* MBXCluserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBXCluserView.swift; sourceTree = "<group>"; };
 		909014E225E7B75300BB59F7 /* LaunchscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchscreenViewController.swift; sourceTree = "<group>"; };
 		909014E625E7B76200BB59F7 /* LaunchscreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchscreenViewModel.swift; sourceTree = "<group>"; };
 		909014E925E7B78000BB59F7 /* LaunchscreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchscreenCoordinator.swift; sourceTree = "<group>"; };
@@ -174,6 +178,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		902A25F22670A8340071803C /* CaveDetail */ = {
+			isa = PBXGroup;
+			children = (
+				902A25F32670A8500071803C /* CaveDetailCoordinator.swift */,
+				902A25F42670A8500071803C /* CaveDetailViewController.swift */,
+				902A25F52670A8500071803C /* CaveDetailViewModel.swift */,
+			);
+			path = CaveDetail;
+			sourceTree = "<group>";
+		};
 		903A958025F77B98000B4551 /* Favoris */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,17 +231,6 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
-		904E4FC925EE971000C991A0 /* Profil */ = {
-			isa = PBXGroup;
-			children = (
-				904E4FCB25EE973300C991A0 /* ProfilCoordinator.swift */,
-				904E4FCC25EE973300C991A0 /* ProfilViewController.swift */,
-				904E4FCD25EE973300C991A0 /* ProfilViewModel.swift */,
-				904E4FD325EE974200C991A0 /* Profil.xib */,
-			);
-			path = Profil;
-			sourceTree = "<group>";
-		};
 		906F072525C855C200A4FEBB = {
 			isa = PBXGroup;
 			children = (
@@ -264,9 +267,9 @@
 		909014E025E7B72600BB59F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				902A25F22670A8340071803C /* CaveDetail */,
 				90A06179262F2FC600BA234E /* Commons */,
 				903A958025F77B98000B4551 /* Favoris */,
-				904E4FC925EE971000C991A0 /* Profil */,
 				904E4FBD25EE930900C991A0 /* Tool */,
 				909F81D725ED4B7500574F63 /* TabBar */,
 				9090157025E8FECA00BB59F7 /* Search */,
@@ -295,6 +298,7 @@
 				9090156125E8FDC000BB59F7 /* HomeMapViewController.swift */,
 				9090156225E8FDC000BB59F7 /* HomeMapViewModel.swift */,
 				909F81E425ED4E9300574F63 /* HomeMapViewController.xib */,
+				907B58592667C99A00F96D38 /* HomeMapViewController+MapBox.swift */,
 			);
 			path = HomeMap;
 			sourceTree = "<group>";
@@ -379,6 +383,8 @@
 			isa = PBXGroup;
 			children = (
 				90A0617A262F2FDF00BA234E /* GrottoTableViewController.swift */,
+				907B585B2667CAC900F96D38 /* MBXAnnotationView.swift */,
+				907B585D2667CB1500F96D38 /* MBXCluserView.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -497,7 +503,6 @@
 				906F073B25C855C300A4FEBB /* Assets.xcassets in Resources */,
 				909014ED25E7B79300BB59F7 /* Launchscreen.xib in Resources */,
 				909F81E525ED4E9300574F63 /* HomeMapViewController.xib in Resources */,
-				904E4FD425EE974200C991A0 /* Profil.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,7 +577,9 @@
 				901CA2592641A8B7005DDE7B /* MapPoi.swift in Sources */,
 				9090156325E8FDC000BB59F7 /* HomeMapCoordinator.swift in Sources */,
 				90A06147262DD27B00BA234E /* Location.swift in Sources */,
+				902A25F62670A8500071803C /* CaveDetailCoordinator.swift in Sources */,
 				901CA253263AEC47005DDE7B /* RemoteConfig.swift in Sources */,
+				907B585A2667C99A00F96D38 /* HomeMapViewController+MapBox.swift in Sources */,
 				909014F325E7BAA300BB59F7 /* AppCoordinator.swift in Sources */,
 				904E4FC325EE933C00C991A0 /* ToolViewModel.swift in Sources */,
 				90A0616E262F2DDC00BA234E /* UIView+Card.swift in Sources */,
@@ -580,6 +587,7 @@
 				90A0614A262F071D00BA234E /* UIView+Constraint.swift in Sources */,
 				904E4FC125EE933C00C991A0 /* ToolCoordinator.swift in Sources */,
 				909F81E225ED4BF900574F63 /* TabBarViewModel.swift in Sources */,
+				902A25F82670A8500071803C /* CaveDetailViewModel.swift in Sources */,
 				90A06164262F2D1900BA234E /* GenericViewCell.swift in Sources */,
 				909F81E125ED4BF900574F63 /* TabBarViewController.swift in Sources */,
 				904D80E42625CB8C005ADD2A /* Request.swift in Sources */,
@@ -589,6 +597,7 @@
 				9090156D25E8FEC300BB59F7 /* SettingViewModel.swift in Sources */,
 				909014EA25E7B78000BB59F7 /* LaunchscreenCoordinator.swift in Sources */,
 				904D80E72625CBB2005ADD2A /* ControlledOperation.swift in Sources */,
+				907B585E2667CB1500F96D38 /* MBXCluserView.swift in Sources */,
 				9090156425E8FDC000BB59F7 /* HomeMapViewController.swift in Sources */,
 				906C6ACC264692D100E0469A /* PoiAnnotationView.swift in Sources */,
 				903A958525F77BA7000B4551 /* FavorisViewController.swift in Sources */,
@@ -600,15 +609,16 @@
 				904E4FC225EE933C00C991A0 /* ToolViewController.swift in Sources */,
 				903A958425F77BA7000B4551 /* FavorisCoordinator.swift in Sources */,
 				9090157625E8FEDC00BB59F7 /* SearchViewModel.swift in Sources */,
+				902A25F72670A8500071803C /* CaveDetailViewController.swift in Sources */,
 				90A06159262F2C7000BA234E /* TableViewAdapter.swift in Sources */,
 				9090155825E82D5800BB59F7 /* ViewController.swift in Sources */,
 				90CD4F3825DACC2A00456C4C /* Cave.swift in Sources */,
 				90A0614F262F0B4B00BA234E /* BaseTableViewController.swift in Sources */,
 				90A06168262F2D3400BA234E /* CardView.swift in Sources */,
-				904E4FCF25EE973300C991A0 /* ProfilViewController.swift in Sources */,
 				90A0616B262F2D4F00BA234E /* CardViewStyle.swift in Sources */,
 				9090157525E8FEDC00BB59F7 /* SearchViewController.swift in Sources */,
 				90A0615C262F2C9600BA234E /* GenericSection.swift in Sources */,
+				907B585C2667CAC900F96D38 /* MBXAnnotationView.swift in Sources */,
 				9090157425E8FEDC00BB59F7 /* SearchCoordinator.swift in Sources */,
 				9090156525E8FDC000BB59F7 /* HomeMapViewModel.swift in Sources */,
 				909014E725E7B76200BB59F7 /* LaunchscreenViewModel.swift in Sources */,
@@ -618,13 +628,11 @@
 				90A061312626DF2D00BA234E /* NormalMode.swift in Sources */,
 				90A0612B2625F36C00BA234E /* Service.swift in Sources */,
 				9090156C25E8FEC300BB59F7 /* SettingViewController.swift in Sources */,
-				904E4FCE25EE973300C991A0 /* ProfilCoordinator.swift in Sources */,
 				909014F025E7B86500BB59F7 /* Coordinator.swift in Sources */,
 				901CA2572640523C005DDE7B /* MKMapView+Edges.swift in Sources */,
 				909F81E025ED4BF900574F63 /* TabBarCoordinator.swift in Sources */,
 				90A0615F262F2CAF00BA234E /* GenericCellData.swift in Sources */,
 				90CD4F3E25DACED000456C4C /* Entrance.swift in Sources */,
-				904E4FD025EE973300C991A0 /* ProfilViewModel.swift in Sources */,
 				906F073225C855C200A4FEBB /* AppDelegate.swift in Sources */,
 				90C14A2125D588F0003DACBD /* GrottoCenterConstants.swift in Sources */,
 			);

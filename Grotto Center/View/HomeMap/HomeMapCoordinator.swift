@@ -22,4 +22,8 @@ class HomeMapCoordinator: Coordinator {
     navigationController.pushViewController(viewController, animated: true)
   }
 
+  func showCaveDetail(caveId: Int) {
+    let coordinator = CaveDetailCoordinator(navigationController: navigationController, caveId: caveId)
+    coordinate(to: coordinator)
+  }
 }

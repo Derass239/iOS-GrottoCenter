@@ -17,8 +17,12 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>20210510185024</string>
+	<string>20210622110543</string>
 	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiZGVyYXNzIiwiYSI6ImNrb211MTE1czBncTEzMWw2YTA1cml1d2sifQ.bap6fH0x045YMB4AlwpkzQ</string>
+	<key>MGLMapboxMetricsEnabledSettingShownInApp</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
