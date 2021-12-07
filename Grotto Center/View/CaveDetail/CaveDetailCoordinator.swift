@@ -9,7 +9,7 @@ import UIKit
 
 class CaveDetailCoordinator: Coordinator {
   
-  unowned var navigationController: UINavigationController
+  let navigationController: UINavigationController
 
   let caveId: Int
 
@@ -19,9 +19,10 @@ class CaveDetailCoordinator: Coordinator {
   }
   
   func start() {
-    let viewController = CaveDetailViewController(nibName: nil, bundle: nil)
-    viewController.viewModel = CaveDetailViewModel(coordinator: self)
-    
-    navigationController.pushViewController(viewController, animated: true)
+    let viewController = CaveDetailViewController()
+    viewController.viewModel = CaveDetailViewModel(coordinator: self, caveId: caveId)
+    viewController.modalPresentationStyle = .automatic
+
+    navigationController.present(viewController, animated: true)
   }
 }

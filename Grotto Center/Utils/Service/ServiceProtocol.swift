@@ -15,5 +15,8 @@ protocol ServiceProtocol {
   func getCave(id: Int) -> Observable<Cave>
   func getEntrance(id: Int) -> Observable<Entrance>
   
-  // MARK: - PUTS
+  // MARK: - POST
+
+  func postSearchAdvanced(searchTerm: String) -> Observable<[Entrance]>
+  
 }

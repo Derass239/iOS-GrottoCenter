@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Coordinator: class {
+protocol Coordinator {
   func start()
   func coordinate(to coordinator: Coordinator)
 }

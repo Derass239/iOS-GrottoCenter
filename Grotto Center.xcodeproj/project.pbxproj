@@ -50,9 +50,7 @@
 		909F81E025ED4BF900574F63 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F81DD25ED4BF900574F63 /* TabBarCoordinator.swift */; };
 		909F81E125ED4BF900574F63 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F81DE25ED4BF900574F63 /* TabBarViewController.swift */; };
 		909F81E225ED4BF900574F63 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909F81DF25ED4BF900574F63 /* TabBarViewModel.swift */; };
-		909F81E525ED4E9300574F63 /* HomeMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F81E425ED4E9300574F63 /* HomeMapViewController.xib */; };
 		909F81E825ED4ECB00574F63 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F81E725ED4ECB00574F63 /* SettingViewController.xib */; };
-		909F81EB25ED4EE800574F63 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909F81EA25ED4EE800574F63 /* SearchViewController.xib */; };
 		90A061282625ED1500BA234E /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A061272625ED1500BA234E /* ServiceProtocol.swift */; };
 		90A0612B2625F36C00BA234E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0612A2625F36C00BA234E /* Service.swift */; };
 		90A0612E2626CF3100BA234E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0612D2626CF3100BA234E /* JSON.swift */; };
@@ -73,7 +71,13 @@
 		90A06174262F2EBB00BA234E /* UIContextualAction+CellAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06173262F2EBB00BA234E /* UIContextualAction+CellAction.swift */; };
 		90A06177262F2F0200BA234E /* BaseTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A06176262F2F0200BA234E /* BaseTableViewModel.swift */; };
 		90A0617B262F2FDF00BA234E /* GrottoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0617A262F2FDF00BA234E /* GrottoTableViewController.swift */; };
+		90AA3138269834F3008DC0AB /* StringInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AA3137269834F3008DC0AB /* StringInformation.swift */; };
+		90AA313A26989F8E008DC0AB /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AA313926989F8E008DC0AB /* LocationService.swift */; };
+		90AA313C2698AE55008DC0AB /* UITextFiled+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AA313B2698AE55008DC0AB /* UITextFiled+Keyboard.swift */; };
+		90AA313E269CA9F0008DC0AB /* UIApplication+TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AA313D269CA9F0008DC0AB /* UIApplication+TopView.swift */; };
 		90C14A2125D588F0003DACBD /* GrottoCenterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C14A2025D588F0003DACBD /* GrottoCenterConstants.swift */; };
+		90C1D221269720C8005BD59B /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C1D220269720C8005BD59B /* SearchResultCell.swift */; };
+		90C1D223269720D2005BD59B /* SearchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C1D222269720D2005BD59B /* SearchResultData.swift */; };
 		90CD4F3825DACC2A00456C4C /* Cave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD4F3725DACC2A00456C4C /* Cave.swift */; };
 		90CD4F3B25DACDFD00456C4C /* Caver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD4F3A25DACDFD00456C4C /* Caver.swift */; };
 		90CD4F3E25DACED000456C4C /* Entrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD4F3D25DACED000456C4C /* Entrance.swift */; };
@@ -128,9 +132,7 @@
 		909F81DD25ED4BF900574F63 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		909F81DE25ED4BF900574F63 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		909F81DF25ED4BF900574F63 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
-		909F81E425ED4E9300574F63 /* HomeMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMapViewController.xib; sourceTree = "<group>"; };
 		909F81E725ED4ECB00574F63 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
-		909F81EA25ED4EE800574F63 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		90A061272625ED1500BA234E /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		90A0612A2625F36C00BA234E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		90A0612D2626CF3100BA234E /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
@@ -151,7 +153,13 @@
 		90A06173262F2EBB00BA234E /* UIContextualAction+CellAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContextualAction+CellAction.swift"; sourceTree = "<group>"; };
 		90A06176262F2F0200BA234E /* BaseTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewModel.swift; sourceTree = "<group>"; };
 		90A0617A262F2FDF00BA234E /* GrottoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrottoTableViewController.swift; sourceTree = "<group>"; };
+		90AA3137269834F3008DC0AB /* StringInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInformation.swift; sourceTree = "<group>"; };
+		90AA313926989F8E008DC0AB /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		90AA313B2698AE55008DC0AB /* UITextFiled+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled+Keyboard.swift"; sourceTree = "<group>"; };
+		90AA313D269CA9F0008DC0AB /* UIApplication+TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopView.swift"; sourceTree = "<group>"; };
 		90C14A2025D588F0003DACBD /* GrottoCenterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrottoCenterConstants.swift; sourceTree = "<group>"; };
+		90C1D220269720C8005BD59B /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		90C1D222269720D2005BD59B /* SearchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultData.swift; sourceTree = "<group>"; };
 		90CD4F3725DACC2A00456C4C /* Cave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cave.swift; sourceTree = "<group>"; };
 		90CD4F3A25DACDFD00456C4C /* Caver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caver.swift; sourceTree = "<group>"; };
 		90CD4F3D25DACED000456C4C /* Entrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrance.swift; sourceTree = "<group>"; };
@@ -206,6 +214,7 @@
 				90A0612A2625F36C00BA234E /* Service.swift */,
 				90A061302626DF2D00BA234E /* NormalMode.swift */,
 				901CA252263AEC47005DDE7B /* RemoteConfig.swift */,
+				90AA313926989F8E008DC0AB /* LocationService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -297,7 +306,6 @@
 				9090156025E8FDC000BB59F7 /* HomeMapCoordinator.swift */,
 				9090156125E8FDC000BB59F7 /* HomeMapViewController.swift */,
 				9090156225E8FDC000BB59F7 /* HomeMapViewModel.swift */,
-				909F81E425ED4E9300574F63 /* HomeMapViewController.xib */,
 				907B58592667C99A00F96D38 /* HomeMapViewController+MapBox.swift */,
 			);
 			path = HomeMap;
@@ -320,7 +328,6 @@
 				9090157125E8FEDC00BB59F7 /* SearchCoordinator.swift */,
 				9090157225E8FEDC00BB59F7 /* SearchViewController.swift */,
 				9090157325E8FEDC00BB59F7 /* SearchViewModel.swift */,
-				909F81EA25ED4EE800574F63 /* SearchViewController.xib */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -358,6 +365,7 @@
 				90A06170262F2E6D00BA234E /* CellAction.swift */,
 				90A06173262F2EBB00BA234E /* UIContextualAction+CellAction.swift */,
 				90A06176262F2F0200BA234E /* BaseTableViewModel.swift */,
+				90AA3137269834F3008DC0AB /* StringInformation.swift */,
 			);
 			path = GenericTableView;
 			sourceTree = "<group>";
@@ -374,6 +382,7 @@
 		90A06162262F2D0C00BA234E /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				90C1D21F26972015005BD59B /* SearchResultCell */,
 				90A06163262F2D1900BA234E /* GenericViewCell.swift */,
 			);
 			path = Commons;
@@ -387,6 +396,15 @@
 				907B585D2667CB1500F96D38 /* MBXCluserView.swift */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		90C1D21F26972015005BD59B /* SearchResultCell */ = {
+			isa = PBXGroup;
+			children = (
+				90C1D220269720C8005BD59B /* SearchResultCell.swift */,
+				90C1D222269720D2005BD59B /* SearchResultData.swift */,
+			);
+			path = SearchResultCell;
 			sourceTree = "<group>";
 		};
 		90E2FF1025D2EEF800E71AD0 /* Models */ = {
@@ -422,6 +440,8 @@
 				90A06149262F071D00BA234E /* UIView+Constraint.swift */,
 				90A0616D262F2DDC00BA234E /* UIView+Card.swift */,
 				901CA2562640523C005DDE7B /* MKMapView+Edges.swift */,
+				90AA313B2698AE55008DC0AB /* UITextFiled+Keyboard.swift */,
+				90AA313D269CA9F0008DC0AB /* UIApplication+TopView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -498,11 +518,9 @@
 				9090155B25E8335C00BB59F7 /* Launch Screen.storyboard in Resources */,
 				903A958A25F77BB3000B4551 /* Favoris.xib in Resources */,
 				909F81E825ED4ECB00574F63 /* SettingViewController.xib in Resources */,
-				909F81EB25ED4EE800574F63 /* SearchViewController.xib in Resources */,
 				904E4FC725EE934E00C991A0 /* ToolViewController.xib in Resources */,
 				906F073B25C855C300A4FEBB /* Assets.xcassets in Resources */,
 				909014ED25E7B79300BB59F7 /* Launchscreen.xib in Resources */,
-				909F81E525ED4E9300574F63 /* HomeMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C1D223269720D2005BD59B /* SearchResultData.swift in Sources */,
 				904D80E12625C79E005ADD2A /* Communicator.swift in Sources */,
 				901CA2592641A8B7005DDE7B /* MapPoi.swift in Sources */,
 				9090156325E8FDC000BB59F7 /* HomeMapCoordinator.swift in Sources */,
@@ -580,6 +599,7 @@
 				902A25F62670A8500071803C /* CaveDetailCoordinator.swift in Sources */,
 				901CA253263AEC47005DDE7B /* RemoteConfig.swift in Sources */,
 				907B585A2667C99A00F96D38 /* HomeMapViewController+MapBox.swift in Sources */,
+				90C1D221269720C8005BD59B /* SearchResultCell.swift in Sources */,
 				909014F325E7BAA300BB59F7 /* AppCoordinator.swift in Sources */,
 				904E4FC325EE933C00C991A0 /* ToolViewModel.swift in Sources */,
 				90A0616E262F2DDC00BA234E /* UIView+Card.swift in Sources */,
@@ -599,6 +619,7 @@
 				904D80E72625CBB2005ADD2A /* ControlledOperation.swift in Sources */,
 				907B585E2667CB1500F96D38 /* MBXCluserView.swift in Sources */,
 				9090156425E8FDC000BB59F7 /* HomeMapViewController.swift in Sources */,
+				90AA313A26989F8E008DC0AB /* LocationService.swift in Sources */,
 				906C6ACC264692D100E0469A /* PoiAnnotationView.swift in Sources */,
 				903A958525F77BA7000B4551 /* FavorisViewController.swift in Sources */,
 				90CD4F3B25DACDFD00456C4C /* Caver.swift in Sources */,
@@ -621,10 +642,13 @@
 				907B585C2667CAC900F96D38 /* MBXAnnotationView.swift in Sources */,
 				9090157425E8FEDC00BB59F7 /* SearchCoordinator.swift in Sources */,
 				9090156525E8FDC000BB59F7 /* HomeMapViewModel.swift in Sources */,
+				90AA313C2698AE55008DC0AB /* UITextFiled+Keyboard.swift in Sources */,
 				909014E725E7B76200BB59F7 /* LaunchscreenViewModel.swift in Sources */,
+				90AA313E269CA9F0008DC0AB /* UIApplication+TopView.swift in Sources */,
 				90A0612E2626CF3100BA234E /* JSON.swift in Sources */,
 				903A958625F77BA7000B4551 /* FavorisViewModel.swift in Sources */,
 				90A06156262F2C4800BA234E /* FadeTableView.swift in Sources */,
+				90AA3138269834F3008DC0AB /* StringInformation.swift in Sources */,
 				90A061312626DF2D00BA234E /* NormalMode.swift in Sources */,
 				90A0612B2625F36C00BA234E /* Service.swift in Sources */,
 				9090156C25E8FEC300BB59F7 /* SettingViewController.swift in Sources */,
@@ -765,11 +789,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FT3D266XN7;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				INFOPLIST_FILE = "Grotto Center/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.valentin-limagne.Grotto-Center";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

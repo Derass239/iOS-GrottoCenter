@@ -15,6 +15,10 @@ open class ViewController: UIViewController {
   open override func viewDidLoad() {
     navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
+    self.view.backgroundColor = .white
+    
+    UIApplication.shared.statusBarStyle = .lightContent
+
     addSubviews()
     configure()
     setupLayout()
@@ -22,7 +26,8 @@ open class ViewController: UIViewController {
   
   open override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
-    
+
+    navigationController?.setNavigationBarHidden(false, animated: false)
     navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
   }
   
@@ -33,13 +38,13 @@ open class ViewController: UIViewController {
   
   open override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    
-    updateViewHeightIfNeeded()
+    navigationController?.setNavigationBarHidden(true, animated: false)
+   // updateViewHeightIfNeeded()
   }
   
   open override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    self.view.frame = UIScreen.main.bounds
+    //self.view.frame = UIScreen.main.bounds
   }
   
   fileprivate func updateViewHeightIfNeeded() {

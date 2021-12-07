@@ -16,6 +16,8 @@ class HomeMapViewController: ViewController {
   var viewModel: HomeMapViewModel!
   let disposeBag = DisposeBag()
 
+  var searchView = SearchViewController()
+
   var mapView: MGLMapView = {
     let mapView = MGLMapView().withConstraint()
     mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -64,6 +66,10 @@ class HomeMapViewController: ViewController {
     mapView.attributionButtonPosition = .bottomLeft
     mapView.attributionButtonMargins.x = mapView.logoView.frame.width + 10
     mapView.compassView.isHidden = false
+
+    mapView.showsUserLocation = true
+    mapView.userTrackingMode = .followWithHeading
+    mapView.showsUserHeadingIndicator = true
   }
 
   func configureSegmentControl() {
@@ -81,11 +87,13 @@ class HomeMapViewController: ViewController {
   }
 
   override func addSubviews() {
+    super.addSubviews()
     view.addSubview(mapView)
     view.addSubview(segmentedControl)
   }
 
   override func setupLayout() {
+    super.setupLayout()
     NSLayoutConstraint.activate([
       mapView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
       mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor),

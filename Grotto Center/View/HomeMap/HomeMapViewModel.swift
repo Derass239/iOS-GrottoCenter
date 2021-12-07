@@ -30,4 +30,5 @@ class HomeMapViewModel {
       })
       .disposed(by: disposeBag)
   }
+
 }

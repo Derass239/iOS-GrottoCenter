@@ -220,7 +220,7 @@ class Communicator {
     operationQueue.cancelAllOperations()
     operationQueue = OperationQueue()
     operationQueue.name = "Communicator Queue"
-    operationQueue.maxConcurrentOperationCount = 1
+    operationQueue.maxConcurrentOperationCount = 5
   }
 
 }

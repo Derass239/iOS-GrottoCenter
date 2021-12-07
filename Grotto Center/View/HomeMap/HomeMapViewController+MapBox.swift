@@ -31,9 +31,10 @@ extension HomeMapViewController: MGLMapViewDelegate {
 
     mapView.deselectAnnotation(annotation, animated: false)
 
-    let alert = UIAlertController(title: "test", message: "\(mapPoi!.coordinate)", preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-    self.present(alert, animated: true, completion: nil)
+    viewModel.coordinator.showCaveDetail(caveId: mapPoi?.id ?? 0)
+//    let alert = UIAlertController(title: "test", message: "\(mapPoi!.coordinate)", preferredStyle: .alert)
+//    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//    self.present(alert, animated: true, completion: nil)
   }
 
   func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
@@ -50,6 +51,9 @@ extension HomeMapViewController: MGLMapViewDelegate {
   }
 
   func mapView(_ mapView: MGLMapView, rightCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
+    if annotation is MGLUserLocation && mapView.userLocation != nil {
+      return nil
+    }
     return UIButton(type: .detailDisclosure)
   }
 

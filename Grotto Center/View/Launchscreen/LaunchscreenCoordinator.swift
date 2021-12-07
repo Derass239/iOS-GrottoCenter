@@ -10,8 +10,8 @@ import UIKit
 
 class LaunchscreenCoordinator: Coordinator {
   
-  unowned var navigationController: UINavigationController
-  
+  let navigationController: UINavigationController
+
   init(navigationController: UINavigationController) {
     self.navigationController = navigationController
   }

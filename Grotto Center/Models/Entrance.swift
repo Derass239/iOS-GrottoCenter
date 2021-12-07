@@ -9,13 +9,13 @@ import Foundation
 
 class Entrance {
   var id: Int = 0
-  var name: String = "-"
-  var city: String = "-"
-  var country: String = "-"
-  var county: String = "-"
+  var name: String = ""
+  var city: String = ""
+  var country: String = ""
+  var county: String = ""
   var latitude: Double = 0
   var longitude: Double = 0
-  var region: String = "-"
+  var region: String = ""
   var aestheticism: Int = 0
   var caving: Int = 0
   var approach: Int = 0
@@ -28,11 +28,11 @@ class Entrance {
   init(_ array: [String: Any]) {
     let json = JSON(array)
     id = json["id"].value(0)
-    name = json["name"].value("-")
-    city = json["city"].value("-")
-    country = json["country"].value("-")
-    county = json["county"].value("-")
-    region = json["region"].value("-")
+    name = json["name"].value("")
+    city = json["city"].value("")
+    country = json["country"].value("")
+    county = json["county"].value("")
+    region = json["region"].value("")
     latitude = json["latitude"].value(0.0)
     longitude = json["longitude"].value(0.0)
     aestheticism = json["stats"]["aestheticism"].value(0)

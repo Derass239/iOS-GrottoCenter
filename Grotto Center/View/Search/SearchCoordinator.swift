@@ -9,16 +9,21 @@ import UIKit
 
 class SearchCoordinator: Coordinator {
   
-  unowned var navigationController: UINavigationController
+  let navigationController: UINavigationController
   
   init(navigationController: UINavigationController) {
     self.navigationController = navigationController
   }
   
   func start() {
-    let viewController = SearchViewController(nibName: nil, bundle: nil)
+    let viewController = SearchViewController()
     viewController.viewModel = SearchViewModel(coordinator: self)
     
     navigationController.pushViewController(viewController, animated: true)
+  }
+
+  func showCaveDetail(caveId: Int) {
+    let coordinator = CaveDetailCoordinator(navigationController: navigationController, caveId: caveId)
+    coordinate(to: coordinator)
   }
 }

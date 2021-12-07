@@ -10,15 +10,19 @@ import UIKit
 class CaveDetailViewController: GrottoTableViewController {
   
   var viewModel: CaveDetailViewModel!
+  override var baseTableViewModel: BaseTableViewModel { return viewModel }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     setupFullScreenTableView() 
   }
 
-  override func setupLayout() {
-    NSLayoutConstraint.activate([
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    viewModel.getCaveDetail()
+  }
 
-    ])
+  override func viewDidAppear(_ animated: Bool) {
+    navigationController?.setNavigationBarHidden(false, animated: true)
   }
 }

@@ -51,5 +51,10 @@ class Service {
     guard let service = service else { return noService() }
     return service.getEntrance(id: id)
   }
+
+  func postSearchAdvanced(searchTerm: String) -> Observable<[Entrance]> {
+    guard let service = service else { return noService() }
+    return service.postSearchAdvanced(searchTerm: searchTerm)
+  }
 }
 
